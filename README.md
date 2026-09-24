@@ -19,6 +19,21 @@ Two things live here:
 
 Each step runs as a job you watch: the web UI streams the agent's tool calls and output live over a websocket, and a chat panel scoped to whatever you are looking at reruns the agent to change it. Everything it writes is plain files in `projects/<name>/`, so you can read, edit and commit them.
 
+![An asset: its brief, its four reference views, and the chat that refines it](docs/images/ui-asset.png)
+
+One asset — its brief on the left, its four generated reference views on the right, the built mesh below, and a chat panel that changes any of it. The provenance chips under the title say which design-doc sections the brief came from.
+
+<table>
+<tr>
+<td width="50%"><img src="docs/images/ui-design.png" alt="The five design docs as tabs"></td>
+<td width="50%"><img src="docs/images/ui-manifest.png" alt="The derived asset list, awaiting acceptance"></td>
+</tr>
+<tr>
+<td>The five design docs, editable in place. Changing one marks every brief derived from it stale.</td>
+<td>The 110 assets derived from those docs. Nothing is generated until you accept the list — a wrong list otherwise multiplies into dozens of wrong briefs and paid image calls.</td>
+</tr>
+</table>
+
 ### Run it locally
 
 Nothing is hosted — you start the server yourself and open it in a browser:
@@ -38,7 +53,9 @@ It needs an agent CLI — [Codex](https://developers.openai.com/codex/cli) or [C
 
 [`projects/lighthouse-keeper/`](projects/lighthouse-keeper/) is one idea taken end to end: 1,447 lines of design docs, 110 derived assets, and the herring gull carried all the way through a 56 KB brief, four reference views, a 3,072-triangle rigged mesh that passed 27 of 27 dimensional and topology checks, and this render — materials and lighting built from the art bible's own hex palette:
 
-![The built herring gull, rendered](projects/lighthouse-keeper/assets/herring-gull/build/render.png)
+![The built herring gull, rendered](docs/images/herring-gull-render.png)
+
+The bird is in its bind pose — wings flat at 0° dihedral — because the brief asks for exactly that, so the 1.44 m wingspan is measurable straight off the bounding box. The perched and sheltering poses are animation clips on its nine-bone rig.
 
 The three plans behind it are in [`plans/`](plans/).
 
