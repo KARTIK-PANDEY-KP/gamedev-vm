@@ -1,0 +1,44 @@
+PYTHON_STARTED: herring-gull headless presentation
+14:57:04 | INFO: Data are loaded, start creating Blender stuff
+14:57:04 | INFO: Blender create Mesh node GullBody
+14:57:04 | INFO: Blender create Mesh node GullEye_L
+14:57:04 | INFO: Blender create Mesh node GullEye_R
+14:57:04 | INFO: Blender create Mesh node GullFoot_L
+14:57:04 | INFO: Blender create Mesh node GullFoot_R
+14:57:04 | INFO: Blender create Mesh node GullLeg_L
+14:57:04 | INFO: Blender create Mesh node GullLeg_R
+14:57:04 | INFO: Blender create Mesh node GullTail
+14:57:04 | INFO: Blender create Mesh node GullWing_L
+14:57:04 | INFO: Blender create Mesh node GullWing_R
+14:57:04 | INFO: glTF import finished in 0.01s
+IMPORTED {"object": "GullRig", "type": "ARMATURE", "bone_display_helper": false, "hide_render": false}
+IMPORTED {"object": "GullBody", "type": "MESH", "bone_display_helper": false, "hide_render": false, "mesh": "GullBody", "materials": [], "vertices": 524, "uv_layers": [], "bounds": [[-0.08547055721282959, 0.08547055721282959], [-0.37270256876945496, 0.135297492146492], [0.09655743837356567, 0.3794516921043396]]}
+IMPORTED {"object": "GullEye_L", "type": "MESH", "bone_display_helper": false, "hide_render": false, "mesh": "GullEye_L", "materials": [], "vertices": 34, "uv_layers": [], "bounds": [[0.015318132936954498, 0.0276818685233593], [-0.2918844223022461, -0.2795206904411316], [0.3384999632835388, 0.3514999747276306]]}
+IMPORTED {"object": "GullEye_R", "type": "MESH", "bone_display_helper": false, "hide_render": false, "mesh": "GullEye_R", "materials": [], "vertices": 34, "uv_layers": [], "bounds": [[-0.0276818685233593, -0.015318132936954498], [-0.2918844223022461, -0.2795206904411316], [0.3384999632835388, 0.3514999747276306]]}
+IMPORTED {"object": "GullFoot_L", "type": "MESH", "bone_display_helper": false, "hide_render": false, "mesh": "GullFoot_L", "materials": [], "vertices": 135, "uv_layers": [], "bounds": [[0.010510594584047794, 0.053489405661821365], [-0.026702476665377617, 0.033281661570072174], [-3.470219667178753e-08, 0.007999968715012074]]}
+IMPORTED {"object": "GullFoot_R", "type": "MESH", "bone_display_helper": false, "hide_render": false, "mesh": "GullFoot_R", "materials": [], "vertices": 135, "uv_layers": [], "bounds": [[-0.053489405661821365, -0.010510594584047794], [-0.026702476665377617, 0.033281661570072174], [-3.470219667178753e-08, 0.007999968715012074]]}
+IMPORTED {"object": "GullLeg_L", "type": "MESH", "bone_display_helper": false, "hide_render": false, "mesh": "GullLeg_L", "materials": [], "vertices": 50, "uv_layers": [], "bounds": [[0.017000000923871994, 0.04699999839067459], [0.006297508720308542, 0.036297507584095], [0.002499968744814396, 0.1419999748468399]]}
+IMPORTED {"object": "GullLeg_R", "type": "MESH", "bone_display_helper": false, "hide_render": false, "mesh": "GullLeg_R", "materials": [], "vertices": 50, "uv_layers": [], "bounds": [[-0.04699999839067459, -0.017000000923871994], [0.006297508720308542, 0.036297507584095], [0.002499968744814396, 0.1419999748468399]]}
+IMPORTED {"object": "GullTail", "type": "MESH", "bone_display_helper": false, "hide_render": false, "mesh": "GullTail", "materials": [], "vertices": 144, "uv_layers": [], "bounds": [[-0.06199999898672104, 0.06199999898672104], [0.0792974978685379, 0.2472323179244995], [0.18800000846385956, 0.22369997203350067]]}
+IMPORTED {"object": "GullWing_L", "type": "MESH", "bone_display_helper": false, "hide_render": false, "mesh": "GullWing_L", "materials": [], "vertices": 234, "uv_layers": [], "bounds": [[0.054999999701976776, 0.7199999690055847], [-0.18478313088417053, 0.08218170702457428], [0.2519954741001129, 0.2748192250728607]]}
+IMPORTED {"object": "GullWing_R", "type": "MESH", "bone_display_helper": false, "hide_render": false, "mesh": "GullWing_R", "materials": [], "vertices": 234, "uv_layers": [], "bounds": [[-0.7199999690055847, -0.054999999701976776], [-0.18478313088417053, 0.08218170702457428], [0.2519954741001129, 0.2748192250728607]]}
+IMPORTED {"object": "Icosphere", "type": "MESH", "bone_display_helper": true, "hide_render": true, "mesh": "Icosphere", "materials": [], "vertices": 42, "uv_layers": ["UVMap"], "bounds": [[-0.9510578513145447, 0.9510578513145447], [-0.9999999403953552, 0.9999999403953552], [-1.0, 1.0]]}
+/Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/build/render.py:81: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  self.mat.use_nodes = True
+MATERIAL GullBody ['Plumage | Sea Foam down + Weathered Zinc mantle', 'Bill | Brass-coloured KERATIN + Oxide Red gonys | metallic ZERO']
+MATERIAL GullEye_L ['GullEye_L | Lime iris, Storm Black pupil, Oxide orbital ring']
+MATERIAL GullEye_R ['GullEye_R | Lime iris, Storm Black pupil, Oxide orbital ring']
+MATERIAL GullFoot_L ['Feet | permitted tint web + Storm Black claws']
+MATERIAL GullFoot_R ['Feet | permitted tint web + Storm Black claws']
+MATERIAL GullLeg_L ['Legs and tarsi | permitted tint 836B5F | scaled keratin']
+MATERIAL GullLeg_R ['Legs and tarsi | permitted tint 836B5F | scaled keratin']
+MATERIAL GullTail ['Tail rectrices | Sea Foam | stiff feather']
+MATERIAL GullWing_L ['Wings | Zinc coverts, Storm Black primaries, Sea Foam edges and mirrors']
+MATERIAL GullWing_R ['Wings | Zinc coverts, Storm Black primaries, Sea Foam edges and mirrors']
+FRAME_BOUNDS [0.07000008970499039, 0.1514594703912735, 0.9300001263618469, 0.848540186882019]
+/Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/build/render.py:340: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+00:12.448  render           | Saved: '/Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/build/render.png'
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

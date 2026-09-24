@@ -1,0 +1,93 @@
+{
+  "ok": true,
+  "image": "render.png",
+  "samples": 192,
+  "resolution": [
+    1600,
+    1200
+  ],
+  "materials": [
+    {
+      "zone": "Head, neck, breast, belly, flanks, undertail",
+      "hex": "#A8B4B0",
+      "roughness": 0.62
+    },
+    {
+      "zone": "Wet shoulders and upper wing coverts",
+      "hex": "#5C6B6A",
+      "roughness": 0.22
+    },
+    {
+      "zone": "Drier mantle and lower coverts",
+      "hex": "#5C6B6A",
+      "roughness": 0.38
+    },
+    {
+      "zone": "Primary tips, shafts and claws",
+      "hex": "#0B1418",
+      "roughness": 0.3
+    },
+    {
+      "zone": "Tail, primary bases, trailing edges and mirrors",
+      "hex": "#A8B4B0",
+      "roughness": 0.3
+    },
+    {
+      "zone": "Bill ridge and hook",
+      "hex": "#C2A15A",
+      "roughness": 0.26
+    },
+    {
+      "zone": "Bill base",
+      "hex": "#C2A15A",
+      "roughness": 0.4
+    },
+    {
+      "zone": "Gonys spot",
+      "hex": "#6E2E24",
+      "roughness": 0.26
+    },
+    {
+      "zone": "Orbital eye ring",
+      "hex": "#6E2E24",
+      "roughness": 0.34
+    },
+    {
+      "zone": "Scaled legs and tarsi",
+      "hex": "#836B5F",
+      "roughness": 0.34
+    },
+    {
+      "zone": "Webbed feet",
+      "hex": "#836B5F",
+      "roughness": 0.52
+    },
+    {
+      "zone": "Iris",
+      "hex": "#8C8578",
+      "roughness": 0.06
+    },
+    {
+      "zone": "Pupil",
+      "hex": "#0B1418",
+      "roughness": 0.06
+    },
+    {
+      "zone": "Patchy crown, nape and upper-mantle salt bloom",
+      "hex": "#A8B4B0",
+      "roughness": 0.62
+    },
+    {
+      "zone": "Lower-breast paraffin film, zinc component",
+      "hex": "#5C6B6A",
+      "roughness": 0.62
+    },
+    {
+      "zone": "Lower-breast paraffin film, lime component",
+      "hex": "#8C8578",
+      "roughness": 0.62
+    }
+  ],
+  "iterations": 2,
+  "notes": "All materials are dielectric, metallic 0.00, with no emission or subsurface scattering. Exact brief sRGB swatches are converted to linear shader values. No new albedo colours. Supplied spread-wing bind pose and geometry retained; no perch animation or UVs exist in the GLB. Materials assigned by GullBody/GullWing/GullTail/GullLeg/GullFoot/GullEye names; bill has a separate body slot. Procedural masks substitute for missing textures: tracts at >=1 mm scale, wet-to-dry mantle roughness 0.22-0.38, bill 0.26-0.40, salt at 30-55% opacity only on normals Z>0.60, and asymmetric 15% lower-breast paraffin film mixing Weathered Zinc toward Lime Render. Chosen: head roughness follows dry down (0.62); salt 0.62, ring 0.34, claws 0.30; minor procedural roughness variation on other surfaces. Chosen presentation: orthographic elevated three-quarter camera, transparent RGBA, no floor; two 6500 K area lights as storm key/fill and one 2200 K area rim, low Iron Blue world fill. Light powers, sizes, camera and exposure are presentation choices; temperatures come from the brief. Final key/fill/rim powers 55/18/12 W, disk sizes 1.45/1.40/0.40 m; exposure 0 stops. Camera direction (2.5,-2.4,2.5), auto-fit to 86% frame bounds. Imported armature custom-shape helper excluded by its bone references. Iteration 1 revealed excessive warm specular wash on the zinc wings; iteration 2 reduces the rim and raises the three-quarter camera to increase vertical occupancy. Final PNG visually inspected: complete silhouette, zinc wings distinct from Sea Foam down, controlled warm rim. Final PNG verified as 1600x1200 RGBA8 with transparent background. Two completed image renders; one earlier setup run stopped before rendering on the importer bone-display helper and was corrected. Input GLB, brief, and all reference files verified unchanged by SHA-256."
+}

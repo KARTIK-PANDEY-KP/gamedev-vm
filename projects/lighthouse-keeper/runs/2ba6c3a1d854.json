@@ -1,0 +1,232 @@
+{
+  "id": "2ba6c3a1d854",
+  "project_id": "lighthouse-keeper",
+  "kind": "build",
+  "scope": "asset:herring-gull",
+  "status": "failed",
+  "started_at": "2026-09-22T20:38:15+00:00",
+  "ended_at": "2026-09-22T21:27:09+00:00",
+  "events": [
+    {
+      "ts": "2026-09-22T20:38:15+00:00",
+      "kind": "status",
+      "text": "building the Herring Gull with /Applications/Blender.app/Contents/MacOS/Blender"
+    },
+    {
+      "ts": "2026-09-22T20:38:15+00:00",
+      "kind": "status",
+      "text": "runtime: claude"
+    },
+    {
+      "ts": "2026-09-22T20:38:15+00:00",
+      "kind": "status",
+      "text": "claude start in lighthouse-keeper"
+    },
+    {
+      "ts": "2026-09-22T20:38:22+00:00",
+      "kind": "log",
+      "text": "I'll start by reading the brief and looking at the reference images."
+    },
+    {
+      "ts": "2026-09-22T20:38:23+00:00",
+      "kind": "tool",
+      "text": "Read /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/brief.md"
+    },
+    {
+      "ts": "2026-09-22T20:38:24+00:00",
+      "kind": "tool",
+      "text": "Bash ls -la /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/ /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herri"
+    },
+    {
+      "ts": "2026-09-22T20:57:58+00:00",
+      "kind": "log",
+      "text": "Brief read. Before code, the numbers I'm building to:\n\n**Dimensions (m):** length bill\u2192tail **0.620**, wingspan **1.440**, standing height feet\u2192crown **0.380**, body width **0.170**, body depth **0.200**, bill 0.055 \u00d7 0.018, tarsus 0.065, foot 0.060, tail-from-vent 0.160, web solid 0.004, wing chord 0.220\u21920.050.\n**Tris:** LOD0 **\u2264 3400**, and criterion 1 also sets a floor of **\u2265 2900**.\n**Pivot:** origin at the foot-contact plane between the feet, on the bilateral centre plane \u2014 X=0 bilateral, Y=0 at the feet's contact midpoint, Z=0 at the sole. All transforms identity. Facing **\u2212Y** in Blender Z-up.\n**Rest pose:** wings spread flat, 0\u00b0 dihedral (so the bbox reads 1.440 directly).\n**Collision:** **no physics collider** \u2014 one trigger-only sphere r=3.00 m on `root`. Nothing to bake into the mesh; it's a prefab line, so I'll record it rather than model it.\n\nWriting the script now, in parts."
+    },
+    {
+      "ts": "2026-09-22T20:58:33+00:00",
+      "kind": "tool",
+      "text": "Write /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/build/build.py"
+    },
+    {
+      "ts": "2026-09-22T20:58:37+00:00",
+      "kind": "log",
+      "text": "Now the part builders."
+    },
+    {
+      "ts": "2026-09-22T20:59:27+00:00",
+      "kind": "tool",
+      "text": "Bash cat >> /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/build/build.py <<'PYEOF'\n\n\n# --------------------------------------------"
+    },
+    {
+      "ts": "2026-09-22T20:59:43+00:00",
+      "kind": "tool",
+      "text": "Edit /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/build/build.py"
+    },
+    {
+      "ts": "2026-09-22T21:00:33+00:00",
+      "kind": "log",
+      "text": "Now assembly, rig, checks and export."
+    },
+    {
+      "ts": "2026-09-22T21:00:36+00:00",
+      "kind": "tool",
+      "text": "Bash python3 - <<'PYEOF'\nimport re\np = \"assets/herring-gull/build/build.py\"\ns = open(p).read()\ns = s.replace(\"    r_toe = 0.0455\\n    r_web = 0.0350\\n    r_hallux ="
+    },
+    {
+      "ts": "2026-09-22T21:01:08+00:00",
+      "kind": "tool",
+      "text": "Bash cat >> /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/build/build.py <<'PYEOF'\n\n\n# --------------------------------------------"
+    },
+    {
+      "ts": "2026-09-22T21:01:55+00:00",
+      "kind": "tool",
+      "text": "Bash python3 - <<'PYEOF'\np = \"assets/herring-gull/build/build.py\"\ns = open(p).read()\n\ns = s.replace(\"\"\"    def bw(ob, pairs):\n        groups = {}\n        for name, _"
+    },
+    {
+      "ts": "2026-09-22T21:01:59+00:00",
+      "kind": "tool",
+      "text": "Edit /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/build/build.py"
+    },
+    {
+      "ts": "2026-09-22T21:02:48+00:00",
+      "kind": "tool",
+      "text": "Bash cat >> /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/build/build.py <<'PYEOF'\n\n\n# --------------------------------------------"
+    },
+    {
+      "ts": "2026-09-22T21:03:14+00:00",
+      "kind": "tool",
+      "text": "Bash python3 - <<'PYEOF'\np = \"assets/herring-gull/build/build.py\"\ns = open(p).read()\ns = s.replace(\"\"\"    loose_v = sum(1 for ob in meshes for v in ob.data.vertices"
+    },
+    {
+      "ts": "2026-09-22T21:03:17+00:00",
+      "kind": "tool",
+      "text": "Bash \"/Applications/Blender.app/Contents/MacOS/Blender\" --background --python assets/herring-gull/build/build.py 2>&1 | tail -70"
+    },
+    {
+      "ts": "2026-09-22T21:04:47+00:00",
+      "kind": "log",
+      "text": "Three real failures. Let me diagnose the non-manifold edges before patching."
+    },
+    {
+      "ts": "2026-09-22T21:04:54+00:00",
+      "kind": "tool",
+      "text": "Bash cat > /tmp/diag.py <<'PYEOF'\nimport sys, runpy, os\nsys.argv = [\"diag\"]\nsrc = open(\"/Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gu"
+    },
+    {
+      "ts": "2026-09-22T21:05:03+00:00",
+      "kind": "log",
+      "text": "Feet have 14 zero-area faces \u2014 the ankle row collapses to a point. Fixing that plus the two check bugs."
+    },
+    {
+      "ts": "2026-09-22T21:05:12+00:00",
+      "kind": "tool",
+      "text": "Bash python3 - <<'PYEOF'\np = \"assets/herring-gull/build/build.py\"\ns = open(p).read()\n\n# 1. Foot: start the radial fan at a real ankle radius so the v=0 row is an arc"
+    },
+    {
+      "ts": "2026-09-22T21:05:17+00:00",
+      "kind": "tool",
+      "text": "Bash \"/Applications/Blender.app/Contents/MacOS/Blender\" --background --python assets/herring-gull/build/build.py 2>&1 | grep -iE \"WARNING|Error|Traceback\" | head -20"
+    },
+    {
+      "ts": "2026-09-22T21:05:28+00:00",
+      "kind": "tool",
+      "text": "Bash cat > /tmp/diag2.py <<'PYEOF'\nimport sys\nsrc = open(\"/Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/build/build.py\").read()\ng ="
+    },
+    {
+      "ts": "2026-09-22T21:06:13+00:00",
+      "kind": "log",
+      "text": "Found it: at the corner where two welded boundaries meet, the top and bottom quads share three vertices and triangulate onto the same diagonal. Fixing both, and dumping the GLB nodes."
+    },
+    {
+      "ts": "2026-09-22T21:06:18+00:00",
+      "kind": "tool",
+      "text": "Bash python3 - <<'PYEOF'\nimport json, struct, math\nraw = open(\"assets/herring-gull/build/asset.glb\",\"rb\").read()\noff=12\nwhile off < len(raw):\n    clen, ctype = struc"
+    },
+    {
+      "ts": "2026-09-22T21:06:36+00:00",
+      "kind": "tool",
+      "text": "Bash python3 - <<'PYEOF'\np = \"assets/herring-gull/build/build.py\"\ns = open(p).read()\n\n# Wing: give the outermost primary tip a real 1.2 mm thickness.  A fully welded"
+    },
+    {
+      "ts": "2026-09-22T21:06:49+00:00",
+      "kind": "log",
+      "text": "27/27, clean run. Now the visual check \u2014 the script passing is the floor. Let me render it and compare against the refs."
+    },
+    {
+      "ts": "2026-09-22T21:07:00+00:00",
+      "kind": "tool",
+      "text": "Bash cat > /tmp/render.py <<'PYEOF'\nimport bpy, math, os\nsrc = open(\"/Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/build/build.py\")"
+    },
+    {
+      "ts": "2026-09-22T21:07:05+00:00",
+      "kind": "tool",
+      "text": "Read /tmp/gull_side.png"
+    },
+    {
+      "ts": "2026-09-22T21:07:18+00:00",
+      "kind": "tool",
+      "text": "Read /tmp/gull_3q.png"
+    },
+    {
+      "ts": "2026-09-22T21:07:51+00:00",
+      "kind": "tool",
+      "text": "Read /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/refs/left.png"
+    },
+    {
+      "ts": "2026-09-22T21:08:51+00:00",
+      "kind": "log",
+      "text": "Ref confirms: blunt deep bill with gonys and hook, thick short neck with no waist, wing rooted on the flank. My version has a swan neck, a spike bill and wings floating above the back. Revising the profile."
+    },
+    {
+      "ts": "2026-09-22T21:09:12+00:00",
+      "kind": "tool",
+      "text": "Bash python3 - <<'PYEOF'\np = \"assets/herring-gull/build/build.py\"\ns = open(p).read()\nold_start = s.index(\"BODY_STATIONS_CTRL = [\")\nold_end = s.index(\"]\\n\", s.index(\""
+    },
+    {
+      "ts": "2026-09-22T21:09:16+00:00",
+      "kind": "tool",
+      "text": "Read /tmp/gull_side.png"
+    },
+    {
+      "ts": "2026-09-22T21:09:42+00:00",
+      "kind": "tool",
+      "text": "Read /tmp/gull_top.png"
+    },
+    {
+      "ts": "2026-09-22T21:10:37+00:00",
+      "kind": "log",
+      "text": "Top view shows the real defect: the slots cut clear to the leading edge, so the hand reads as sawteeth rather than splayed primaries. Adding a solid hand core, plus a blunter bill and real spline interpolation on the body."
+    },
+    {
+      "ts": "2026-09-22T21:10:51+00:00",
+      "kind": "tool",
+      "text": "Bash python3 - <<'PYEOF'\np = \"assets/herring-gull/build/build.py\"\ns = open(p).read()\n\n# Real interpolation between control stations (they were nearly 1:1 before).\ns"
+    },
+    {
+      "ts": "2026-09-22T21:10:56+00:00",
+      "kind": "tool",
+      "text": "Read /tmp/gull_top.png"
+    },
+    {
+      "ts": "2026-09-22T21:27:06+00:00",
+      "kind": "log",
+      "text": "Request timed out"
+    },
+    {
+      "ts": "2026-09-22T21:27:09+00:00",
+      "kind": "status",
+      "text": "28 turns, $8.26"
+    },
+    {
+      "ts": "2026-09-22T21:27:09+00:00",
+      "kind": "error",
+      "text": "RuntimeError: Request timed out"
+    },
+    {
+      "ts": "2026-09-22T21:27:09+00:00",
+      "kind": "status",
+      "text": "Request timed out",
+      "status": "failed"
+    }
+  ]
+}

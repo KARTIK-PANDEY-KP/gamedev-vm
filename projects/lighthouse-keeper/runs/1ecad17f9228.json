@@ -1,0 +1,112 @@
+{
+  "id": "1ecad17f9228",
+  "project_id": "lighthouse-keeper",
+  "kind": "brief",
+  "scope": "asset:herring-gull",
+  "status": "done",
+  "started_at": "2026-09-22T20:06:35+00:00",
+  "ended_at": "2026-09-22T20:15:53+00:00",
+  "events": [
+    {
+      "ts": "2026-09-22T20:06:35+00:00",
+      "kind": "status",
+      "text": "writing the brief for the Herring Gull"
+    },
+    {
+      "ts": "2026-09-22T20:06:35+00:00",
+      "kind": "status",
+      "text": "runtime: claude"
+    },
+    {
+      "ts": "2026-09-22T20:06:35+00:00",
+      "kind": "status",
+      "text": "claude start in lighthouse-keeper"
+    },
+    {
+      "ts": "2026-09-22T20:06:40+00:00",
+      "kind": "log",
+      "text": "I'll start by reading the design docs."
+    },
+    {
+      "ts": "2026-09-22T20:06:41+00:00",
+      "kind": "tool",
+      "text": "Bash find /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper -maxdepth 2 -not -path '*/.git/*' | head -60"
+    },
+    {
+      "ts": "2026-09-22T20:06:45+00:00",
+      "kind": "tool",
+      "text": "Bash wc -l /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design/*.md /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/manifest.json /"
+    },
+    {
+      "ts": "2026-09-22T20:06:47+00:00",
+      "kind": "tool",
+      "text": "Read /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design/art-bible.md"
+    },
+    {
+      "ts": "2026-09-22T20:06:52+00:00",
+      "kind": "tool",
+      "text": "Read /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design/game-design.md"
+    },
+    {
+      "ts": "2026-09-22T20:06:54+00:00",
+      "kind": "tool",
+      "text": "Read /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design/level-design.md"
+    },
+    {
+      "ts": "2026-09-22T20:07:06+00:00",
+      "kind": "tool",
+      "text": "Read /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design/vision.md"
+    },
+    {
+      "ts": "2026-09-22T20:07:09+00:00",
+      "kind": "tool",
+      "text": "Grep /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper"
+    },
+    {
+      "ts": "2026-09-22T20:07:12+00:00",
+      "kind": "tool",
+      "text": "Read /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/manifest.json"
+    },
+    {
+      "ts": "2026-09-22T20:07:18+00:00",
+      "kind": "tool",
+      "text": "Bash python3 -c \"\nimport json\nd=json.load(open('assets/manifest.json'))\nfor e in d['entries']:\n    print(e['id'],'|',e['name'],'|',e['asset_class'],'|',e['tier'],'|'"
+    },
+    {
+      "ts": "2026-09-22T20:11:12+00:00",
+      "kind": "log",
+      "text": "Now I have everything. Writing the two files."
+    },
+    {
+      "ts": "2026-09-22T20:15:38+00:00",
+      "kind": "tool",
+      "text": "Write /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/brief.md"
+    },
+    {
+      "ts": "2026-09-22T20:15:47+00:00",
+      "kind": "tool",
+      "text": "Write /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/subject.json"
+    },
+    {
+      "ts": "2026-09-22T20:15:50+00:00",
+      "kind": "log",
+      "text": "Wrote `assets/herring-gull/brief.md` and `assets/herring-gull/subject.json` \u2014 built to the design set's **1.44 m wingspan** (`art-bible.md` \u00a78 row 56 and `game-design.md` \u00a74 both state 0.62 m \u00d7 1.44 m), not the manifest note's 1.10 m, and the note's claim that the gull is \"never named in the asset table\" is also wrong \u2014 it is row 56; both discrepancies are flagged in Assumptions (A1) and raised as Open question Q1."
+    },
+    {
+      "ts": "2026-09-22T20:15:53+00:00",
+      "kind": "status",
+      "text": "12 turns, $3.23"
+    },
+    {
+      "ts": "2026-09-22T20:15:53+00:00",
+      "kind": "result",
+      "text": "brief written for the Herring Gull"
+    },
+    {
+      "ts": "2026-09-22T20:15:53+00:00",
+      "kind": "status",
+      "text": "done",
+      "status": "done"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "ok": true,
+  "triangles": 3072,
+  "dimensions_m": [
+    1.44,
+    0.6199,
+    0.3795
+  ],
+  "checks": [
+    {
+      "name": "Wingspan, tip to tip (X)",
+      "measured": "1.4400 m (target 1.440 m, +0.00%, band 1.4112-1.4688)",
+      "pass": true
+    },
+    {
+      "name": "Body length, bill tip to tail tip (Y)",
+      "measured": "0.6199 m (target 0.620 m, -0.01%, band 0.6076-0.6324)",
+      "pass": true
+    },
+    {
+      "name": "Standing height, feet to crown (Z)",
+      "measured": "0.3795 m (target 0.380 m, -0.14%, band 0.3724-0.3876)",
+      "pass": true
+    },
+    {
+      "name": "Body width, wings folded (torso)",
+      "measured": "0.1709 m (target 0.170 m, +0.55%, band 0.1666-0.1734)",
+      "pass": true
+    },
+    {
+      "name": "Body depth, belly to back (torso)",
+      "measured": "0.1975 m (target 0.200 m, -1.25%, band 0.1960-0.2040)",
+      "pass": true
+    },
+    {
+      "name": "Bill length",
+      "measured": "0.0550 m (target 0.055 m, +0.00%, band 0.0539-0.0561)",
+      "pass": true
+    },
+    {
+      "name": "Bill depth at base",
+      "measured": "0.0174 m (target 0.018 m, -3.40%, band 0.0169-0.0191)",
+      "pass": true
+    },
+    {
+      "name": "Tail length from vent",
+      "measured": "0.1599 m (target 0.160 m, -0.04%, band 0.1568-0.1632)",
+      "pass": true
+    },
+    {
+      "name": "Foot length including web",
+      "measured": "0.0600 m (target 0.060 m, -0.03%, band 0.0588-0.0612)",
+      "pass": true
+    },
+    {
+      "name": "Web thickness (solid, thinnest membrane)",
+      "measured": "0.0040 m (target 0.004 m, +0.00%, band 0.0039-0.0041)",
+      "pass": true
+    },
+    {
+      "name": "Tarsus length (ankle to intertarsal joint)",
+      "measured": "0.0650 m (target 0.065 m, -0.00%, band 0.0637-0.0663)",
+      "pass": true
+    },
+    {
+      "name": "Wing chord at root",
+      "measured": "0.2200 m (target 0.220 m, -0.00%, band 0.2156-0.2244)",
+      "pass": true
+    },
+    {
+      "name": "Wing chord at tip",
+      "measured": "0.0500 m (target 0.050 m, +0.00%, band 0.0470-0.0530)",
+      "pass": true
+    },
+    {
+      "name": "Notched 3rd left primary, shortfall vs right",
+      "measured": "0.0350 m (target 0.035 m, +0.00%, band 0.0329-0.0371)",
+      "pass": true
+    },
+    {
+      "name": "Triangle count within budget",
+      "measured": "3072 tris (budget 2900-3400)",
+      "pass": true
+    },
+    {
+      "name": "N-gons / quads in exported mesh",
+      "measured": "0 non-triangular faces",
+      "pass": true
+    },
+    {
+      "name": "Inverted face normals",
+      "measured": "0 faces disagree with outward recalc; 10/10 shells have positive signed volume",
+      "pass": true
+    },
+    {
+      "name": "Loose geometry",
+      "measured": "0 loose verts, 0 loose edges, 10 parts each a single island",
+      "pass": true
+    },
+    {
+      "name": "Non-manifold edges (watertight shells)",
+      "measured": "0 edges not shared by exactly 2 faces",
+      "pass": true
+    },
+    {
+      "name": "Object transforms applied (loc 0, rot 0, scale 1)",
+      "measured": "11/11 objects identity",
+      "pass": true
+    },
+    {
+      "name": "Pivot at foot-contact plane between the feet",
+      "measured": "origin offset from contact centroid = (-0.0000, -0.0002, 0.0000) m, min Z = 0.00000 m",
+      "pass": true
+    },
+    {
+      "name": "Bilateral centre plane on X = 0",
+      "measured": "min X -0.7200, max X 0.7200, asymmetry 0.00000 m",
+      "pass": true
+    },
+    {
+      "name": "Rig: 9 bones, exact names",
+      "measured": "9 bones: root, body, neck, head, wing_L_01, wing_L_02, wing_R_01, wing_R_02, tail",
+      "pass": true
+    },
+    {
+      "name": "Root bone identity at the origin",
+      "measured": "root head = (0.0000, 0.0000, 0.0000)",
+      "pass": true
+    },
+    {
+      "name": "Skin weights",
+      "measured": "max 2 influences/vertex, 0 unweighted, worst |sum-1| = 0.000000",
+      "pass": true
+    },
+    {
+      "name": "Vertex colour channels",
+      "measured": "0",
+      "pass": true
+    },
+    {
+      "name": "GLB exported, +Y up, 1 unit = 1 metre",
+      "measured": "bbox X 1.4400 (span) / Y 0.3795 (height) / Z 0.6199 (length) m; 20 nodes, max node-scale deviation 9.54e-06 (float32 noise)",
+      "pass": true
+    }
+  ],
+  "notes": "Rest pose per brief.md 'Pivot and origin rule': wings spread flat at 0 deg dihedral, legs straight under the body, neck extended, so the 1.440 m wingspan and 0.620 m length are measurable straight off the bounding box. Bird faces -Y in Blender Z-up; glTF export converts to +Y up / +Z forward. Origin is the foot-contact plane between the feet on the bilateral centre plane, all transforms applied. 9-bone rig exactly as specified; legs and feet rigid-weighted to 'body' per Assumption A6. The single asymmetry of form is the third left primary, broken short by 0.035 m (Wear item 3); everything else is bilaterally symmetric. Four splayed primary slots are modelled into the hand planform, not as alpha cards. No chamfers, rivets or radial symmetry anywhere (Art direction). No collider is baked into the mesh: the brief specifies no physics collider at all, only a prefab-side trigger SphereCollider of radius 3.00 m on 'root' for the 3.0 m flee. Textures, UVs and the three animation clips are out of scope for this geometry build."
+}

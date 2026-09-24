@@ -1,0 +1,1350 @@
+{
+  "accepted": true,
+  "entries": [
+    {
+      "id": "chr-keeper-hands",
+      "name": "CHR_Keeper_Hands",
+      "asset_class": "character",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.1-character-and-hands",
+        "game-design.md#4-entity-roster",
+        "art-bible.md#8-platform-and-budgets"
+      ],
+      "note": "The only skinned mesh: two gloved forearms in Oilcloth Green oilskin cuffs, present in every first-person frame."
+    },
+    {
+      "id": "herring-gull",
+      "name": "the Herring Gull",
+      "asset_class": "character",
+      "tier": "background",
+      "in_slice": false,
+      "derived_from": [
+        "game-design.md#4-entity-roster",
+        "level-design.md#4.10-the-gallery"
+      ],
+      "note": "1.10 m wingspan ambient bird, one scripted sheltering appearance under the Gallery rail; never named in the asset table."
+    },
+    {
+      "id": "prp-lens-drum",
+      "name": "PRP_LensDrum",
+      "asset_class": "prop",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.2-the-fresnel-lamp-and-its-systems",
+        "game-design.md#4-entity-roster",
+        "level-design.md#4.9-the-lantern-room"
+      ],
+      "note": "First-order Fresnel optic, four bullseye panels in a verdigris brass frame, turning at 2.0 rpm at the centre of the hero space."
+    },
+    {
+      "id": "prp-burner-assembly",
+      "name": "PRP_BurnerAssembly",
+      "asset_class": "prop",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.2-the-fresnel-lamp-and-its-systems",
+        "game-design.md#3.1-the-lamp-system",
+        "game-design.md#4-entity-roster"
+      ],
+      "note": "Paraffin vapour burner inside the Lens Drum, the game's light source and the F1 Burner Flameout repair target."
+    },
+    {
+      "id": "prp-rotation-drive",
+      "name": "PRP_RotationDrive",
+      "asset_class": "prop",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.2-the-fresnel-lamp-and-its-systems",
+        "game-design.md#4-entity-roster",
+        "level-design.md#4.9-the-lantern-room"
+      ],
+      "note": "Mercury-float turntable pedestal the Lens Drum rides on; also the plinth the Ignition Lever is mounted to."
+    },
+    {
+      "id": "prp-ignition-lever",
+      "name": "PRP_IgnitionLever",
+      "asset_class": "prop",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.2-the-fresnel-lamp-and-its-systems",
+        "game-design.md#2-verbs-objects",
+        "level-design.md#4.9-the-lantern-room"
+      ],
+      "note": "Brass throw lever with a worn wood ball grip on the pedestal's seaward face; the relight verb lives here."
+    },
+    {
+      "id": "prp-vent-flap",
+      "name": "PRP_VentFlap",
+      "asset_class": "prop",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.2-the-fresnel-lamp-and-its-systems",
+        "game-design.md#3.2-the-fault-system",
+        "level-design.md#4.9-the-lantern-room"
+      ],
+      "note": "Copper cowl damper in the lantern dome at 2.85 m, camera-locked for a 5.0 s Flue Brush repair on F2."
+    },
+    {
+      "id": "prp-fault-board",
+      "name": "PRP_FaultBoard",
+      "asset_class": "prop",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.2-the-fresnel-lamp-and-its-systems",
+        "game-design.md#3.2-the-fault-system",
+        "game-design.md#4-entity-roster"
+      ],
+      "note": "Annunciator panel with eight numbered glass lenses on the landward wall; the game's primary diagnostic instrument."
+    },
+    {
+      "id": "prp-clockwork-drive",
+      "name": "PRP_ClockworkDrive",
+      "asset_class": "prop",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.2-the-fresnel-lamp-and-its-systems",
+        "game-design.md#4-entity-roster",
+        "level-design.md#4.8-the-service-room"
+      ],
+      "note": "1907 weight-driven gear train with a visibly turning 84 rpm fly governor; target of F3 and F5."
+    },
+    {
+      "id": "prp-drive-weight",
+      "name": "PRP_DriveWeight",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.2-the-fresnel-lamp-and-its-systems",
+        "game-design.md#4-entity-roster",
+        "level-design.md#4.5-the-weight-well"
+      ],
+      "note": "118 kg cast-iron cylinder on a wire rope; its descent through the trunk slots telegraphs Weight Run-Out."
+    },
+    {
+      "id": "prp-winch-crank",
+      "name": "PRP_WinchCrank",
+      "asset_class": "prop",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.2-the-fresnel-lamp-and-its-systems",
+        "game-design.md#2-verbs-objects",
+        "level-design.md#4.8-the-service-room"
+      ],
+      "note": "Detachable crank with a turned wood grip in its oxide-red socket plate; 6.5 s camera-locked crank for F3."
+    },
+    {
+      "id": "prp-oil-pressure-pump",
+      "name": "PRP_OilPressurePump",
+      "asset_class": "prop",
+      "tier": "hero",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#9.2-the-fresnel-lamp-and-its-systems",
+        "game-design.md#4-entity-roster",
+        "level-design.md#4.8-the-service-room"
+      ],
+      "note": "Brass hand pump with a 0.46 m lever and a 0\u20134 bar gauge; 7.0 s camera-locked purge for F4."
+    },
+    {
+      "id": "prp-breaker-panel",
+      "name": "PRP_BreakerPanel",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#9.2-the-fresnel-lamp-and-its-systems",
+        "game-design.md#4-entity-roster",
+        "level-design.md#4.4-the-plant-room"
+      ],
+      "note": "Bakelite six-way breaker panel with a handwritten circuit card; the 3.0 s reset that clears F7."
+    },
+    {
+      "id": "prp-diesel-generator",
+      "name": "PRP_DieselGenerator",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#9.2-the-fresnel-lamp-and-its-systems",
+        "game-design.md#4-entity-roster",
+        "level-design.md#4.4-the-plant-room"
+      ],
+      "note": "1962 single-cylinder 7.5 kVA set on its concrete plinth; the room-filling mass of the Plant Room."
+    },
+    {
+      "id": "prp-battery-bank",
+      "name": "PRP_BatteryBank",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#9.2-the-fresnel-lamp-and-its-systems",
+        "game-design.md#4-entity-roster",
+        "level-design.md#4.6-the-battery-room"
+      ],
+      "note": "Twelve glass lead-acid cells on a tarred timber rack; deliberately inert set dressing with a 0.9 lux green emissive."
+    },
+    {
+      "id": "prp-radio-set",
+      "name": "PRP_RadioSet",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#9.2-the-fresnel-lamp-and-its-systems",
+        "game-design.md#4-entity-roster",
+        "level-design.md#4.7-the-watch-room"
+      ],
+      "note": "1958 valve transceiver with a 2,200 K dial glow; carries the three scripted Morse transmissions."
+    },
+    {
+      "id": "prp-hurricane-lamp",
+      "name": "PRP_HurricaneLamp",
+      "asset_class": "prop",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.3-carried-and-held-objects",
+        "game-design.md#3.6-the-hurricane-lamp",
+        "art-bible.md#6-lighting-keys"
+      ],
+      "note": "The permanently off-hand paraffin lantern and the Carry Key light source; on screen in every frame."
+    },
+    {
+      "id": "prp-striker",
+      "name": "PRP_Striker",
+      "asset_class": "prop",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.3-carried-and-held-objects",
+        "game-design.md#3.5-the-tool-belt",
+        "game-design.md#4-entity-roster"
+      ],
+      "note": "Flint spark striker, tool slot 1, held to the face during the 4.0 s F1 repair."
+    },
+    {
+      "id": "prp-flue-brush",
+      "name": "PRP_FlueBrush",
+      "asset_class": "prop",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.3-carried-and-held-objects",
+        "game-design.md#3.5-the-tool-belt",
+        "game-design.md#4-entity-roster"
+      ],
+      "note": "0.61 m soot-black wire flue brush on a cane handle, tool slot 2, cure for F2."
+    },
+    {
+      "id": "prp-pipe-wrench",
+      "name": "PRP_PipeWrench",
+      "asset_class": "prop",
+      "tier": "hero",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#9.3-carried-and-held-objects",
+        "game-design.md#3.5-the-tool-belt",
+        "game-design.md#4-entity-roster"
+      ],
+      "note": "14-inch Stillson wrench, tool slot 3, cure for F5, F6 and half of F8; deferred out of the slice."
+    },
+    {
+      "id": "prp-logbook",
+      "name": "PRP_Logbook",
+      "asset_class": "prop",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.3-carried-and-held-objects",
+        "game-design.md#3.9-the-logbook",
+        "game-design.md#8-hud"
+      ],
+      "note": "Quarto station log in Oilcloth Green boards, held full-screen at 0.45 m with DOF when Tab is pressed."
+    },
+    {
+      "id": "prp-oil-can",
+      "name": "PRP_OilCan",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#9.3-carried-and-held-objects",
+        "game-design.md#3.6-the-hurricane-lamp",
+        "level-design.md#4.2-the-oil-store"
+      ],
+      "note": "Two-gallon galvanised paraffin can; four placements are the Hurricane Lamp's Wick Charge refill stations."
+    },
+    {
+      "id": "prp-storm-board",
+      "name": "PRP_StormBoard",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#9.3-carried-and-held-objects",
+        "game-design.md#2-verbs-objects",
+        "level-design.md#4.8-the-service-room"
+      ],
+      "note": "Unpainted spruce plank with webbing handles, carried two-handed at \u00d70.72 speed to seal a breached pane."
+    },
+    {
+      "id": "mod-stair-tread",
+      "name": "MOD_StairTread",
+      "asset_class": "kit_piece",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.4-modular-architecture",
+        "level-design.md#4.3-the-stair-shaft",
+        "level-design.md#3-metrics"
+      ],
+      "note": "Cast-iron open-riser diamond-plate tread, 0.192 m rise \u00d7 0.24 m going, 24 per level."
+    },
+    {
+      "id": "mod-stair-newel",
+      "name": "MOD_StairNewel",
+      "asset_class": "kit_piece",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.4-modular-architecture",
+        "level-design.md#4.3-the-stair-shaft"
+      ],
+      "note": "0.90 m diameter hollow central column segment the treads socket into, one per 4.60 m level."
+    },
+    {
+      "id": "mod-stair-rail",
+      "name": "MOD_StairRail",
+      "asset_class": "kit_piece",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.4-modular-architecture",
+        "level-design.md#4.3-the-stair-shaft"
+      ],
+      "note": "Helical 32 mm bar handrail with stanchions at 0.96 m and oxide-red grip bands, one level per piece."
+    },
+    {
+      "id": "mod-stair-stringer",
+      "name": "outer stringer",
+      "asset_class": "kit_piece",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "level-design.md#3-metrics",
+        "level-design.md#4.3-the-stair-shaft",
+        "art-bible.md#9.4-modular-architecture"
+      ],
+      "note": "Helical outer stringer band at 1.85 m radius that carries the tread ends; implied by the metrics table, absent from the asset table."
+    },
+    {
+      "id": "mod-weight-trunk-segment",
+      "name": "weight trunk",
+      "asset_class": "kit_piece",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "level-design.md#4.3-the-stair-shaft",
+        "level-design.md#4.5-the-weight-well",
+        "game-design.md#3.2-the-fault-system"
+      ],
+      "note": "Full-height trunk enclosure with a glazed inspection slot every 1.15 m \u2014 the game's key environmental telegraph, never named in the asset table."
+    },
+    {
+      "id": "mod-tower-wall-interior",
+      "name": "MOD_TowerWall_Interior",
+      "asset_class": "kit_piece",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.4-modular-architecture",
+        "level-design.md#3-metrics"
+      ],
+      "note": "30\u00b0 arc of limewashed rubble-granite interior wall at 2.40 m inner radius; 12 pieces make a full circle."
+    },
+    {
+      "id": "mod-tower-wall-exterior",
+      "name": "MOD_TowerWall_Exterior",
+      "asset_class": "kit_piece",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.4-modular-architecture",
+        "level-design.md#4.10-the-gallery",
+        "level-design.md#4.1-the-landing"
+      ],
+      "note": "30\u00b0 arc of dressed-granite exterior wall at 3.30 m outer radius, seen at arm's length from the Gallery."
+    },
+    {
+      "id": "mod-floor-plate",
+      "name": "MOD_FloorPlate",
+      "asset_class": "kit_piece",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.4-modular-architecture",
+        "level-design.md#3-metrics"
+      ],
+      "note": "90\u00b0 cast-iron floor plate quadrant with an optional 0.90 m hatch cut-out and bolted flange."
+    },
+    {
+      "id": "mod-lantern-glazing",
+      "name": "MOD_LanternGlazing",
+      "asset_class": "kit_piece",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.4-modular-architecture",
+        "level-design.md#4.9-the-lantern-room",
+        "game-design.md#3.2-the-fault-system"
+      ],
+      "note": "One of ten 1.42 m glazing bays \u2014 astragal pair plus curved pane; also the F8 Glazing Shatter target."
+    },
+    {
+      "id": "mod-lantern-glazing-shattered",
+      "name": "Glazing Panel (shattered)",
+      "asset_class": "kit_piece",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "game-design.md#3.2-the-fault-system",
+        "game-design.md#2-verbs-objects",
+        "level-design.md#4.10-the-gallery"
+      ],
+      "note": "Failed-pane variant of the glazing bay with a hole to board over; required by F8 and never listed in the asset table."
+    },
+    {
+      "id": "mod-lantern-roof-panel",
+      "name": "MOD_LanternRoofPanel",
+      "asset_class": "kit_piece",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.4-modular-architecture",
+        "level-design.md#4.9-the-lantern-room"
+      ],
+      "note": "36\u00b0 verdigris copper segment of the lantern dome with standing seams, ten to a roof."
+    },
+    {
+      "id": "mod-gallery-deck",
+      "name": "MOD_GalleryDeck",
+      "asset_class": "kit_piece",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#9.4-modular-architecture",
+        "level-design.md#4.10-the-gallery"
+      ],
+      "note": "36\u00b0 walkway plate with drain slots and a corbel bracket below, 1.10 m wide, ten to a ring."
+    },
+    {
+      "id": "mod-gallery-rail",
+      "name": "MOD_GalleryRail",
+      "asset_class": "kit_piece",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#9.4-modular-architecture",
+        "level-design.md#4.10-the-gallery",
+        "game-design.md#3.8-the-storm-system"
+      ],
+      "note": "36\u00b0 cast-iron balustrade section, 1.05 m tall and solid below 0.55 m; a gapless collider by design."
+    },
+    {
+      "id": "mod-tower-door",
+      "name": "MOD_TowerDoor",
+      "asset_class": "kit_piece",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.4-modular-architecture",
+        "game-design.md#2-verbs-objects",
+        "level-design.md#2-worldbuilding-answers"
+      ],
+      "note": "Riveted steel door with six dogs and an oxide-red rim; six placements route the storm audio bus."
+    },
+    {
+      "id": "mod-tower-window",
+      "name": "window",
+      "asset_class": "kit_piece",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.6-the-battery-room",
+        "level-design.md#4.7-the-watch-room",
+        "art-bible.md#3-palette"
+      ],
+      "note": "0.55 \u00d7 0.90 splayed window opening with Gunmetal Wash astragals and glass; implied by two areas and the palette, absent from the asset table."
+    },
+    {
+      "id": "mod-bulkhead-light",
+      "name": "MOD_BulkheadLight",
+      "asset_class": "kit_piece",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.4-modular-architecture",
+        "art-bible.md#6-lighting-keys"
+      ],
+      "note": "Caged 2,700 K bulkhead fixture with ribbed glass, 14 placements; the Service Key light source."
+    },
+    {
+      "id": "kit-caged-plant-lamp",
+      "name": "caged 2,400 K lamp",
+      "asset_class": "kit_piece",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#6-lighting-keys",
+        "level-design.md#4.2-the-oil-store",
+        "level-design.md#4.4-the-plant-room"
+      ],
+      "note": "The Plant Key's single 140 lm caged fixture \u2014 a larger, warmer lamp than MOD_BulkheadLight and a separate build."
+    },
+    {
+      "id": "mod-cable-run",
+      "name": "MOD_CableRun",
+      "asset_class": "kit_piece",
+      "tier": "background",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#9.4-modular-architecture",
+        "level-design.md#2-worldbuilding-answers"
+      ],
+      "note": "Surface-mounted conduit with saddle clips on a 1.0 m repeat; the 1962 rewire, modelled as the ugly work."
+    },
+    {
+      "id": "mod-rock-shelf",
+      "name": "MOD_RockShelf",
+      "asset_class": "kit_piece",
+      "tier": "background",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#9.4-modular-architecture",
+        "level-design.md#4.1-the-landing"
+      ],
+      "note": "6 m wet granite outcrop tile with pooled water recesses; eight tiles make the 18 \u00d7 11 m Landing shelf."
+    },
+    {
+      "id": "env-sea-plane",
+      "name": "ENV_SeaPlane",
+      "asset_class": "environment",
+      "tier": "background",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.5-environment-and-effects",
+        "game-design.md#3.8-the-storm-system"
+      ],
+      "note": "1,800 m Gerstner-displaced ocean plane whose swell height is driven by the storm phase, 2.1 m to 6.8 m."
+    },
+    {
+      "id": "env-sky-dome",
+      "name": "ENV_SkyDome",
+      "asset_class": "environment",
+      "tier": "background",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.5-environment-and-effects",
+        "art-bible.md#6-lighting-keys"
+      ],
+      "note": "Overcast storm cubemap with cloud base at 180 m and no visible moon; the Storm Key's sky ambient."
+    },
+    {
+      "id": "env-cormorant-reef",
+      "name": "ENV_CormorantReef",
+      "asset_class": "environment",
+      "tier": "background",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#9.5-environment-and-effects",
+        "game-design.md#4-entity-roster",
+        "level-design.md#4.7-the-watch-room"
+      ],
+      "note": "310 m drying rock ridge 1.4 km out on bearing 214\u00b0, read only as permanent white water."
+    },
+    {
+      "id": "env-corbie-lights",
+      "name": "ENV_CorbieLights",
+      "asset_class": "prop",
+      "tier": "background",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.5-environment-and-effects",
+        "game-design.md#3.3-the-ship-system-mv-corbie",
+        "game-design.md#4-entity-roster"
+      ],
+      "note": "MV Corbie's whole visual presence: a masthead + green sidelight two-quad card with a hull silhouette behind."
+    },
+    {
+      "id": "env-beam-cone",
+      "name": "ENV_BeamCone",
+      "asset_class": "vfx",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.5-environment-and-effects",
+        "art-bible.md#6-lighting-keys",
+        "level-design.md#4.10-the-gallery"
+      ],
+      "note": "Hand-authored 18\u00b0 additive volumetric cone at 22% opacity; the only light shaft in the game and its signature image."
+    },
+    {
+      "id": "fx-rain",
+      "name": "FX_Rain",
+      "asset_class": "vfx",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.5-environment-and-effects",
+        "game-design.md#3.8-the-storm-system"
+      ],
+      "note": "Wind-sheared Sea Foam rain streaks, 900\u20133,000 particles/s scaled by storm phase."
+    },
+    {
+      "id": "fx-spray",
+      "name": "FX_Spray",
+      "asset_class": "vfx",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#9.5-environment-and-effects",
+        "level-design.md#4.10-the-gallery",
+        "level-design.md#4.1-the-landing"
+      ],
+      "note": "Coarse salt-spray bursts off the tower base with a 3.2 m radius, on the Gallery and the Landing."
+    },
+    {
+      "id": "fx-soot",
+      "name": "FX_Soot",
+      "asset_class": "vfx",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.5-environment-and-effects",
+        "game-design.md#3.2-the-fault-system",
+        "level-design.md#5-beat-chart-first-playable-slice"
+      ],
+      "note": "Slow black soot fall from the Vent Flap while F2 Vent Soot Choke is active; the visible symptom in slice beat 5."
+    },
+    {
+      "id": "fx-mantle-flame",
+      "name": "FX_MantleFlame",
+      "asset_class": "vfx",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.5-environment-and-effects",
+        "game-design.md#3.1-the-lamp-system",
+        "art-bible.md#3-palette"
+      ],
+      "note": "Mantle ignition and steady burn on a Lamp Amber \u2192 Mantle White blackbody ramp; the only true amber in frame."
+    },
+    {
+      "id": "fx-burner-smoke",
+      "name": "burner smoke",
+      "asset_class": "vfx",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#8-platform-and-budgets",
+        "game-design.md#3.1-the-lamp-system"
+      ],
+      "note": "The visible soot haze of the Dimmed beam state; counted in the seven-particle budget but missing from the asset table."
+    },
+    {
+      "id": "fx-breaking-water",
+      "name": "breaking water",
+      "asset_class": "vfx",
+      "tier": "background",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#8-platform-and-budgets",
+        "level-design.md#4.1-the-landing",
+        "game-design.md#4-entity-roster"
+      ],
+      "note": "White water breaking 14 m off the Landing and permanently over Cormorant Reef; budgeted as a particle system, never tabled."
+    },
+    {
+      "id": "fx-gust-debris",
+      "name": "gust debris",
+      "asset_class": "vfx",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#8-platform-and-budgets",
+        "game-design.md#3.8-the-storm-system"
+      ],
+      "note": "Airborne matter carried on the 2.4 s gust envelope outdoors; budgeted as a particle system, never tabled."
+    },
+    {
+      "id": "fx-glazing-flex",
+      "name": "glazing flex",
+      "asset_class": "vfx",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "level-design.md#5-beat-chart-first-playable-slice",
+        "audio.md#5.6-doors-world-and-weather",
+        "game-design.md#3.8-the-storm-system"
+      ],
+      "note": "One pane visibly bowing during the Squall beat, paired with SFX_Glass_Flex; the slice's only scripted glass deformation."
+    },
+    {
+      "id": "fx-glazing-shatter",
+      "name": "Glazing Shatter",
+      "asset_class": "vfx",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "game-design.md#3.2-the-fault-system",
+        "audio.md#5.6-doors-world-and-weather"
+      ],
+      "note": "Pane failure burst and the wind-through-hole air stream that persists until F8 is boarded over."
+    },
+    {
+      "id": "fx-glass-rain",
+      "name": "FX_GlassRain",
+      "asset_class": "material",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.5-environment-and-effects",
+        "level-design.md#4.9-the-lantern-room"
+      ],
+      "note": "Rain-on-glass shader for the lantern and Watch Room glazing, streaks driven by wind direction."
+    },
+    {
+      "id": "fx-water-on-deck",
+      "name": "FX_WaterOnDeck",
+      "asset_class": "material",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#9.5-environment-and-effects",
+        "level-design.md#4.10-the-gallery"
+      ],
+      "note": "Animated sheeting-water shader for the Gallery deck segments."
+    },
+    {
+      "id": "trim-iron-a",
+      "name": "TRIM_Iron_A",
+      "asset_class": "material",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#5-material-and-texture-rules",
+        "art-bible.md#9.4-modular-architecture"
+      ],
+      "note": "One of the two 2048\u00b2 trim sheets the whole building is built from: rivet strips, flange bands, tread nosings, bracket profiles."
+    },
+    {
+      "id": "trim-paint-a",
+      "name": "TRIM_Paint_A",
+      "asset_class": "material",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#5-material-and-texture-rules",
+        "art-bible.md#9.6-ui-and-2d"
+      ],
+      "note": "The second 2048\u00b2 trim sheet: limewash edges, oxide-red hazard bands and the stencilled numerals 1\u20138."
+    },
+    {
+      "id": "mat-interior-unpainted-render",
+      "name": "unpainted render",
+      "asset_class": "material",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "art-bible.md#3-palette",
+        "level-design.md#4.2-the-oil-store",
+        "level-design.md#4.4-the-plant-room"
+      ],
+      "note": "Salt Grey dry stonework finish for the Oil Store and Plant Room walls; a second interior wall material the asset table never named."
+    },
+    {
+      "id": "mat-plant-room-concrete",
+      "name": "bare concrete",
+      "asset_class": "material",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.4-the-plant-room",
+        "art-bible.md#5-material-and-texture-rules"
+      ],
+      "note": "Tiling concrete for the 1962 blasted vault's floor, walls and generator plinth; the only concrete in the tower."
+    },
+    {
+      "id": "mat-chalk-tally-decal",
+      "name": "chalked tally of winding times",
+      "asset_class": "material",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.5-the-weight-well"
+      ],
+      "note": "Hand-authored chalk decal of winding times going back to 1968, at 1.50 m on the Weight Well wall."
+    },
+    {
+      "id": "prp-landing-derrick-stub",
+      "name": "derrick stub",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.1-the-landing"
+      ],
+      "note": "The landing derrick that has not been used in six days \u2014 the Landing's main silhouette landmark."
+    },
+    {
+      "id": "prp-mooring-bollard",
+      "name": "mooring bollard",
+      "asset_class": "prop",
+      "tier": "background",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.1-the-landing"
+      ],
+      "note": "Cast-iron bollard on the rock shelf, set dressing for the unusable landing."
+    },
+    {
+      "id": "prp-landing-ladder",
+      "name": "iron ladder going nowhere",
+      "asset_class": "prop",
+      "tier": "background",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.1-the-landing"
+      ],
+      "note": "A fixed iron ladder on the Landing that leads nowhere; pure scale and mood dressing."
+    },
+    {
+      "id": "prp-paraffin-drum",
+      "name": "200 L paraffin drum",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.2-the-oil-store"
+      ],
+      "note": "1.60 m drum instanced four times on the Oil Store gantry; the station's bulk fuel."
+    },
+    {
+      "id": "prp-timber-gantry",
+      "name": "timber gantry",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.2-the-oil-store"
+      ],
+      "note": "The timber rack the four paraffin drums sit on, against 000\u2013060\u00b0 of the Oil Store."
+    },
+    {
+      "id": "prp-wire-rope-coil",
+      "name": "wire-rope coil",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.2-the-oil-store"
+      ],
+      "note": "Coiled spare wire rope on the Oil Store floor, matching the Drive Weight's rope."
+    },
+    {
+      "id": "prp-trunk-inspection-plate",
+      "name": "trunk inspection plate",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.2-the-oil-store"
+      ],
+      "note": "Bolted access plate at the foot of the weight trunk, carrying the Oil Store's one oxide-red hazard band."
+    },
+    {
+      "id": "prp-exhaust-penetration-cowl",
+      "name": "wall exhaust penetration",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.4-the-plant-room"
+      ],
+      "note": "The generator's exhaust through the wall at 045\u00b0 with its salt-stained cowl."
+    },
+    {
+      "id": "kit-weight-guide-rail",
+      "name": "guide rails",
+      "asset_class": "kit_piece",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.5-the-weight-well"
+      ],
+      "note": "Four vertical guide rails the Drive Weight runs between over its 11.4 m fall."
+    },
+    {
+      "id": "prp-spares-crib",
+      "name": "spares crib",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.5-the-weight-well"
+      ],
+      "note": "2.20 m run of Bone Lime timber shelving against 180\u2013260\u00b0 of the Weight Well."
+    },
+    {
+      "id": "prp-spares-bin",
+      "name": "labelled bins",
+      "asset_class": "prop",
+      "tier": "background",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.5-the-weight-well"
+      ],
+      "note": "Instanced labelled parts bin that fills the spares crib shelves."
+    },
+    {
+      "id": "prp-hydrometer-jar",
+      "name": "hydrometer jar",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.6-the-battery-room"
+      ],
+      "note": "Glass hydrometer standing in a jar on the Battery Room shelf; the room's only small readable object."
+    },
+    {
+      "id": "prp-wall-shelf",
+      "name": "shelf",
+      "asset_class": "prop",
+      "tier": "background",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.6-the-battery-room",
+        "level-design.md#4.7-the-watch-room"
+      ],
+      "note": "Generic bracketed wall shelf reused for the hydrometer jar and the Radio Set."
+    },
+    {
+      "id": "prp-chart-table",
+      "name": "chart table",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.7-the-watch-room"
+      ],
+      "note": "1.20 \u00d7 0.80 m table under the Watch Room window, the fiction's centre of gravity."
+    },
+    {
+      "id": "prp-station-chart",
+      "name": "chart",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.7-the-watch-room",
+        "game-design.md#4-entity-roster"
+      ],
+      "note": "The station chart with Cormorant Reef pencilled in; the only in-world map of the hazard."
+    },
+    {
+      "id": "prp-keepers-bunk",
+      "name": "bunk",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.7-the-watch-room",
+        "level-design.md#2-worldbuilding-answers"
+      ],
+      "note": "1.90 \u00d7 0.75 m bunk, made up with an Oilcloth Green blanket; two placements, both empty since 1971."
+    },
+    {
+      "id": "prp-barometer",
+      "name": "barometer",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.7-the-watch-room"
+      ],
+      "note": "Tarnished brass aneroid barometer at 1.60 m reading 961 mb and falling 1.4 mb/h."
+    },
+    {
+      "id": "prp-enamel-mug",
+      "name": "mug",
+      "asset_class": "prop",
+      "tier": "background",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.7-the-watch-room"
+      ],
+      "note": "A single mug on the chart table \u2014 the smallest piece of evidence one person lives here."
+    },
+    {
+      "id": "prp-station-ledger",
+      "name": "ledger",
+      "asset_class": "prop",
+      "tier": "background",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.7-the-watch-room"
+      ],
+      "note": "Closed station ledger on the chart table, distinct from the carried Logbook."
+    },
+    {
+      "id": "prp-workbench",
+      "name": "workbench",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.8-the-service-room"
+      ],
+      "note": "1.60 m bench at 180\u00b0 of the Service Room, with the third Oil Can beneath it."
+    },
+    {
+      "id": "prp-storm-board-rack",
+      "name": "STORM BOARD rack",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.8-the-service-room",
+        "game-design.md#2-verbs-objects"
+      ],
+      "note": "Wall rack at 240\u00b0 holding two Storm Boards; the fetch point for the F8 repair."
+    },
+    {
+      "id": "prp-oil-feed-standpipe",
+      "name": "oil feed standpipe",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.8-the-service-room"
+      ],
+      "note": "Vertical feed pipe from the Service Room to the burner, with an oxide-red valve; the line F4 airlocks."
+    },
+    {
+      "id": "prp-lantern-cast-iron-step",
+      "name": "0.40 m cast-iron step",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "level-design.md#4.9-the-lantern-room",
+        "game-design.md#4-entity-roster",
+        "level-design.md#3-metrics"
+      ],
+      "note": "The step under the Vent Flap that makes the tallest reachable fixture reachable; required by F2 and absent from the asset table."
+    },
+    {
+      "id": "prp-floor-hatch-cover",
+      "name": "hatch to STAIR SHAFT",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "level-design.md#4.9-the-lantern-room",
+        "level-design.md#3-metrics",
+        "audio.md#5.1-the-fresnel-lamp"
+      ],
+      "note": "0.90 \u00d7 0.90 m hinged hatch cover over the stair opening; the opening the escapement is heard through."
+    },
+    {
+      "id": "prp-storm-shutter",
+      "name": "Storm Shutter",
+      "asset_class": "prop",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "level-design.md#4.10-the-gallery",
+        "game-design.md#2-verbs-objects",
+        "level-design.md#2-worldbuilding-answers"
+      ],
+      "note": "Sliding iron shutter in a salted track at 120\u00b0 and 240\u00b0, blocking 0.8 m of gust wall; operable, never tabled."
+    },
+    {
+      "id": "ui-hold-ring",
+      "name": "UI_HoldRing",
+      "asset_class": "ui",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.6-ui-and-2d",
+        "game-design.md#8-hud",
+        "game-design.md#3.7-the-repair-interaction"
+      ],
+      "note": "56 px Mantle White radial fill ring; the only feedback on every repair, including in total darkness."
+    },
+    {
+      "id": "ui-interact-glyphs",
+      "name": "UI_InteractGlyphs",
+      "asset_class": "ui",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.6-ui-and-2d",
+        "game-design.md#8-hud"
+      ],
+      "note": "Eight 24 px verb glyphs \u2014 hold, crank, pump, throw, read, light, carry, open \u2014 plus the WRONG TOOL state."
+    },
+    {
+      "id": "ui-annunciator-lenses",
+      "name": "UI_AnnunciatorLenses",
+      "asset_class": "ui",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.6-ui-and-2d",
+        "game-design.md#3.2-the-fault-system",
+        "game-design.md#9-menu-screens"
+      ],
+      "note": "Eight numbered lens states (off / red steady / amber pulse) driving the Fault Board, with the greyscale-safe numerals."
+    },
+    {
+      "id": "ui-logbook-pages",
+      "name": "UI_LogbookPages",
+      "asset_class": "ui",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.6-ui-and-2d",
+        "game-design.md#3.9-the-logbook"
+      ],
+      "note": "The two-page spread: objective and watch time left, the redactable Annunciator/Symptom/Cure index right."
+    },
+    {
+      "id": "ui-range-line",
+      "name": "UI_RangeLine",
+      "asset_class": "ui",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.6-ui-and-2d",
+        "game-design.md#8-hud",
+        "level-design.md#4.9-the-lantern-room"
+      ],
+      "note": "Acid-etched hairline and nine-tick scale on glazing bay 1; the diegetic readout of Lateral Clearance."
+    },
+    {
+      "id": "ui-reticle",
+      "name": "Reticle",
+      "asset_class": "ui",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "game-design.md#8-hud"
+      ],
+      "note": "3 px dot at 22% opacity growing to 5 px at 70% over an interactable; on screen at all times."
+    },
+    {
+      "id": "ui-wind-vignette",
+      "name": "Wind Vignette",
+      "asset_class": "ui",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "game-design.md#8-hud",
+        "game-design.md#3.4-the-wind-system-player-breath"
+      ],
+      "note": "Screen-edge darkening ramping 0% \u2192 38% as Wind falls 75 \u2192 0; the only breath readout in the game."
+    },
+    {
+      "id": "ui-tool-wheel",
+      "name": "Tool Wheel",
+      "asset_class": "ui",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "game-design.md#8-hud",
+        "game-design.md#3.5-the-tool-belt"
+      ],
+      "note": "320 px three-sector radial selector at 0.25 timescale, auto-closing at 2.0 s."
+    },
+    {
+      "id": "ui-fault-ticker",
+      "name": "Fault Ticker",
+      "asset_class": "ui",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "game-design.md#8-hud",
+        "game-design.md#5-objectives-win-and-lose"
+      ],
+      "note": "Lower-centre single line of annunciator text for 3.5 s; the only screen-corner element in the game."
+    },
+    {
+      "id": "ui-clearance-readout",
+      "name": "Clearance Readout",
+      "asset_class": "ui",
+      "tier": "background",
+      "in_slice": false,
+      "derived_from": [
+        "game-design.md#8-hud",
+        "game-design.md#9-menu-screens"
+      ],
+      "note": "Optional upper-centre `CLEARANCE 128 m` numeric at 2 Hz; accessibility toggle, off by default."
+    },
+    {
+      "id": "ui-subtitle-line",
+      "name": "Subtitle line",
+      "asset_class": "ui",
+      "tier": "background",
+      "in_slice": false,
+      "derived_from": [
+        "game-design.md#8-hud"
+      ],
+      "note": "Non-speech caption line above the ticker; listed in the HUD table and deferred."
+    },
+    {
+      "id": "ui-title-plate",
+      "name": "UI_TitlePlate",
+      "asset_class": "ui",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "art-bible.md#9.6-ui-and-2d",
+        "game-design.md#9-menu-screens"
+      ],
+      "note": "3840\u00b2 still of the Lantern Room at 1/120 s; the full-bleed backdrop of the title screen."
+    },
+    {
+      "id": "ui-title-screen",
+      "name": "Title",
+      "asset_class": "ui",
+      "tier": "hero",
+      "in_slice": true,
+      "derived_from": [
+        "game-design.md#9-menu-screens",
+        "game-design.md#6-game-flow"
+      ],
+      "note": "Title screen layout over UI_TitlePlate: New Watch, Continue (greyed in the slice), Options, Quit."
+    },
+    {
+      "id": "ui-boot-logo",
+      "name": "Boot logo",
+      "asset_class": "ui",
+      "tier": "background",
+      "in_slice": false,
+      "derived_from": [
+        "game-design.md#6-game-flow"
+      ],
+      "note": "2.5 s skippable boot sequence ahead of the title."
+    },
+    {
+      "id": "ui-options-gameplay",
+      "name": "Options \u2014 Gameplay",
+      "asset_class": "ui",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "game-design.md#9-menu-screens"
+      ],
+      "note": "Difficulty, hold-to-repair toggle, hold-tool-wheel toggle, crouch toggle, Fault Ticker on/off."
+    },
+    {
+      "id": "ui-options-video",
+      "name": "Options \u2014 Video",
+      "asset_class": "ui",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "game-design.md#9-menu-screens"
+      ],
+      "note": "Resolution, window mode, quality preset, VSync, frame cap, FOV 55\u201395, motion blur, head bob, camera roll."
+    },
+    {
+      "id": "ui-options-audio",
+      "name": "Options \u2014 Audio",
+      "asset_class": "ui",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "game-design.md#9-menu-screens",
+        "audio.md#2-mix-buses"
+      ],
+      "note": "Six bus sliders \u2014 Master, Storm, Machinery, Music, UI, Player \u2014 plus a mono downmix toggle."
+    },
+    {
+      "id": "ui-options-accessibility",
+      "name": "Options \u2014 Accessibility",
+      "asset_class": "ui",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "game-design.md#9-menu-screens",
+        "game-design.md#7-progression-difficulty-and-economy"
+      ],
+      "note": "Clearance Readout, greyscale-safe annunciator, Long Night, shake and impulse reduction, hold-time multiplier, high-contrast prompt."
+    },
+    {
+      "id": "ui-options-controls",
+      "name": "Options \u2014 Controls",
+      "asset_class": "ui",
+      "tier": "mid",
+      "in_slice": false,
+      "derived_from": [
+        "game-design.md#9-menu-screens",
+        "game-design.md#1-the-3cs"
+      ],
+      "note": "Full rebind for keyboard+mouse and gamepad, sensitivity sliders, invert X and Y."
+    },
+    {
+      "id": "ui-pause-screen",
+      "name": "Pause",
+      "asset_class": "ui",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "game-design.md#9-menu-screens",
+        "game-design.md#6-game-flow"
+      ],
+      "note": "Resume, Options, Restart Watch, Quit to Title at timescale 0.0, plus the 1.0 s resume countdown ring."
+    },
+    {
+      "id": "ui-loss-screen",
+      "name": "Loss",
+      "asset_class": "ui",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "game-design.md#9-menu-screens",
+        "game-design.md#5-objectives-win-and-lose"
+      ],
+      "note": "`SHE STRUCK.` with elapsed watch time and the fault active at grounding."
+    },
+    {
+      "id": "ui-win-screen",
+      "name": "Win",
+      "asset_class": "ui",
+      "tier": "mid",
+      "in_slice": true,
+      "derived_from": [
+        "game-design.md#9-menu-screens",
+        "game-design.md#5-objectives-win-and-lose"
+      ],
+      "note": "`SHE PASSED.` and the Station Record card: clearance at pass, faults cleared, longest dark interval."
+    }
+  ],
+  "derived_at": "2026-09-22T19:53:11+00:00",
+  "accepted_at": "2026-09-22T20:23:03+00:00"
+}

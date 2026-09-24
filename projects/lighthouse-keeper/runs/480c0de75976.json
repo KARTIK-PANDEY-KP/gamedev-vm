@@ -1,0 +1,47 @@
+{
+  "id": "480c0de75976",
+  "project_id": "lighthouse-keeper",
+  "kind": "images",
+  "scope": "asset:herring-gull",
+  "status": "done",
+  "started_at": "2026-09-22T20:31:05+00:00",
+  "ended_at": "2026-09-22T20:33:17+00:00",
+  "events": [
+    {
+      "ts": "2026-09-22T20:31:05+00:00",
+      "kind": "status",
+      "text": "4 image(s), about $0.50 at high quality"
+    },
+    {
+      "ts": "2026-09-22T20:31:05+00:00",
+      "kind": "status",
+      "text": "front view \u2014 gpt-image-2.5-flare, high, 1024x1024"
+    },
+    {
+      "ts": "2026-09-22T20:31:29+00:00",
+      "kind": "status",
+      "text": "left view \u2014 gpt-image-2.5-sunburst, conditioned on front"
+    },
+    {
+      "ts": "2026-09-22T20:32:07+00:00",
+      "kind": "status",
+      "text": "back view \u2014 gpt-image-2.5-sunburst, conditioned on front"
+    },
+    {
+      "ts": "2026-09-22T20:32:40+00:00",
+      "kind": "status",
+      "text": "right view \u2014 gpt-image-2.5-sunburst, conditioned on front"
+    },
+    {
+      "ts": "2026-09-22T20:33:17+00:00",
+      "kind": "result",
+      "text": "4 view(s) generated for the Herring Gull"
+    },
+    {
+      "ts": "2026-09-22T20:33:17+00:00",
+      "kind": "status",
+      "text": "done",
+      "status": "done"
+    }
+  ]
+}

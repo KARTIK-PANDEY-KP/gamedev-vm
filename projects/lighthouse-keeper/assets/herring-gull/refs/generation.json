@@ -1,0 +1,23 @@
+{
+  "views": [
+    "front",
+    "left",
+    "back",
+    "right"
+  ],
+  "models": {
+    "front": "gpt-image-2.5-flare",
+    "other_views": "gpt-image-2.5-sunburst"
+  },
+  "quality": "high",
+  "size": "1024x1024",
+  "background": "transparent",
+  "style_prompt": "*Rendered as a physically-based 3D game asset at a realism level of seven out of ten, in the material language of a 1904 North Atlantic lighthouse: dressed grey granite, riveted wrought iron, galvanised steel, polished and tarnished brass, thick lead-painted timber, tarred oak and hand-blown crown glass. Shape language is heavy, symmetrical and load-bearing \u2014 cylinders, rings, radial spokes, flanges, rivet lines and simple chamfers between 2 mm and 8 mm, with no sharp unsupported edges, no organic curves and no decorative flourish beyond a single engraved brass plate.",
+  "front_prompt": "SUBJECT \u2014 the image shows this and nothing else: An adult herring gull standing in a closed horizontal wedge, its folded wings tucked inside the body outline with crossed near-black primaries projecting a hand's width past a tapered tail, a short blunt hooked bill, a heavy convex belly and scaled webbed feet with dark curled claws; the head, throat, breast, belly and tail are a pale cool sea-foam grey, the mantle and folded wing coverts a flat weathered zinc grey the colour of galvanised rail, the outer wingtips deep storm black, the bill a dull unpolished brass tone with a small oxide-red spot on the lower mandible and a thin oxide-red ring around a pale blank clay-grey iris, and the legs and webs a muted desaturated clay-pink; patchy dried salt crust whitens the crown and upper mantle, the shoulders and back are rain-soaked into separated wet feather spikes while the breast stays dry and lofted, one outer primary on the left wing is broken short, and a faint grey oil film smears the lower breast.\nReal-world size: 0.62 m from bill tip to tail tip, 1.44 m wingspan, 0.38 m tall standing.\nVIEW: front elevation, the subject facing the camera.\nRENDERING STYLE \u2014 governs finish, materials, palette and mood only. It must never change what the subject is, its anatomy or its proportions: *Rendered as a physically-based 3D game asset at a realism level of seven out of ten, in the material language of a 1904 North Atlantic lighthouse: dressed grey granite, riveted wrought iron, galvanised steel, polished and tarnished brass, thick lead-painted timber, tarred oak and hand-blown crown glass. Shape language is heavy, symmetrical and load-bearing \u2014 cylinders, rings, radial spokes, flanges, rivet lines and simple chamfers between 2 mm and 8 mm, with no sharp unsupported edges, no organic curves and no decorative flourish beyond a single engraved brass plate.\nMUST NOT APPEAR: No pure white, cream or ivory plumage, no yellow bill, no bright pink or scarlet legs, no metallic or polished sheen anywhere, no spread, raised or heraldic wings, no second bird or flock, no perch, rail, rock or ground plane, no rivets, chamfers, flanges or machined edges, no injury, blood or missing eye, no text, no watermark and no human figures.\nFlat even diffuse studio lighting, no cast shadows, no ground plane, no backdrop. Fully transparent background. One subject only, centred, filling about 80 percent of the frame, nothing cropped. Camera level with the subject's mid-height, minimal perspective. No text, no logos, no watermarks.\nTo be explicit, the subject of this image is: An adult herring gull standing in a closed horizontal wedge, its folded.",
+  "usage": {
+    "input_tokens": 4377,
+    "output_tokens": 7024,
+    "total_tokens": 11401
+  },
+  "metric_authority": "the brief, not these images"
+}

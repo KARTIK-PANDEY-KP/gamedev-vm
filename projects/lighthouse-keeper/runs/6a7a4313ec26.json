@@ -1,0 +1,87 @@
+{
+  "id": "6a7a4313ec26",
+  "project_id": "lighthouse-keeper",
+  "kind": "design",
+  "scope": null,
+  "status": "done",
+  "started_at": "2026-09-22T19:24:15+00:00",
+  "ended_at": "2026-09-22T19:41:26+00:00",
+  "events": [
+    {
+      "ts": "2026-09-22T19:24:15+00:00",
+      "kind": "status",
+      "text": "writing the five design documents"
+    },
+    {
+      "ts": "2026-09-22T19:24:15+00:00",
+      "kind": "status",
+      "text": "runtime: claude"
+    },
+    {
+      "ts": "2026-09-22T19:24:15+00:00",
+      "kind": "status",
+      "text": "claude start in lighthouse-keeper"
+    },
+    {
+      "ts": "2026-09-22T19:24:22+00:00",
+      "kind": "tool",
+      "text": "Bash ls -la /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/ 2>&1; echo \"---\"; ls -la /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design/"
+    },
+    {
+      "ts": "2026-09-22T19:27:41+00:00",
+      "kind": "tool",
+      "text": "Read /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/project.json"
+    },
+    {
+      "ts": "2026-09-22T19:29:48+00:00",
+      "kind": "tool",
+      "text": "Write /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design/vision.md"
+    },
+    {
+      "ts": "2026-09-22T19:32:50+00:00",
+      "kind": "tool",
+      "text": "Write /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design/game-design.md"
+    },
+    {
+      "ts": "2026-09-22T19:35:41+00:00",
+      "kind": "tool",
+      "text": "Write /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design/art-bible.md"
+    },
+    {
+      "ts": "2026-09-22T19:38:29+00:00",
+      "kind": "tool",
+      "text": "Write /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design/level-design.md"
+    },
+    {
+      "ts": "2026-09-22T19:40:58+00:00",
+      "kind": "tool",
+      "text": "Write /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design/audio.md"
+    },
+    {
+      "ts": "2026-09-22T19:41:07+00:00",
+      "kind": "tool",
+      "text": "Edit /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design/vision.md"
+    },
+    {
+      "ts": "2026-09-22T19:41:20+00:00",
+      "kind": "log",
+      "text": "Written, in `projects/lighthouse-keeper/design/`:\n\n- **`vision.md`** \u2014 archetype (first-person diagnostic-maintenance, 3D), logline, *Firewatch* \u00d7 *Duskers* anchor, 4 pillars, core loop at 3 scales, a five-minute second-person walkthrough, the first slice (**the Lantern Room** dressed + grey-box **Service Room** and one **Stair Shaft** turn, 3 of 8 faults, 500 s session), 29 numbered acceptance checks covering every loop step and both end states, 15 ranked assumptions, non-goals, doc index.\n- **`game-design.md`** \u2014 3Cs with values (1.90 m/s walk, 68\u00b0 FOV, full KB+gamepad map), verbs \u00d7 objects, 9 systems with tuning tables and edge cases, entity roster, win/lose with tie-break, game flow diagram, difficulty curves, HUD and all nine menu screens.\n- **`art-bible.md`** \u2014 realism 7/10, the locked style paragraph plus three variant clauses, 12-hex palette with roles, shape/material/lighting rules, six named lighting keys, do-and-don't, PC budgets (1.9 M tris, 220 draws, texel-density classes), and a 58-row asset table.\n- **`level-design.md`** \u2014 1974 Sable Point setting, the three worldbuilding answers, a metrics table (0.30 m grid, 4.60 m pitch, 7.37 m stair path \u2192 5.08 s/level), all 10 areas with layout sketches and audio references, and a 9-beat slice chart with a cumulative dark-budget check.\n- **`audio.md`** \u2014 4 pillars, 32 bpm grid where one bar = the 7.5 s flash period, six mix buses, music per area and per game state with transition rules, ~85 SFX rows (each fault has a separate silence cue that leads the visual), and four audio acceptance notes.\n\nNames, numbers and derivations are cross-consistent; the one nit I caught on review (a 10.2 s round-trip figure that should have been 9.4 s) is corrected."
+    },
+    {
+      "ts": "2026-09-22T19:41:26+00:00",
+      "kind": "status",
+      "text": "9 turns, $3.01"
+    },
+    {
+      "ts": "2026-09-22T19:41:26+00:00",
+      "kind": "result",
+      "text": "design set written: vision, game-design, art-bible, level-design, audio"
+    },
+    {
+      "ts": "2026-09-22T19:41:26+00:00",
+      "kind": "status",
+      "text": "done",
+      "status": "done"
+    }
+  ]
+}

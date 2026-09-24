@@ -1,0 +1,39 @@
+CHR_HerringGull_01 - build check report
+Blender 5.2.1 LTS
+Source brief: assets/herring-gull/brief.md
+Origin Y shift applied to land the contact patch on Y=0: -0.0027 m
+Hard edges marked at the bill-to-face junction: 18
+Custom split normals added on 10/10 meshes
+Export: asset.glb (97.4 KB)
+
+CHECK                                              RESULT  MEASURED
+-------------------------------------------------  ------  ------------------------------------------------------------
+Wingspan, tip to tip (X)                           PASS    1.4400 m (target 1.440 m, +0.00%, band 1.4112-1.4688)
+Body length, bill tip to tail tip (Y)              PASS    0.6199 m (target 0.620 m, -0.01%, band 0.6076-0.6324)
+Standing height, feet to crown (Z)                 PASS    0.3795 m (target 0.380 m, -0.14%, band 0.3724-0.3876)
+Body width, wings folded (torso)                   PASS    0.1709 m (target 0.170 m, +0.55%, band 0.1666-0.1734)
+Body depth, belly to back (torso)                  PASS    0.1975 m (target 0.200 m, -1.25%, band 0.1960-0.2040)
+Bill length                                        PASS    0.0550 m (target 0.055 m, +0.00%, band 0.0539-0.0561)
+Bill depth at base                                 PASS    0.0174 m (target 0.018 m, -3.40%, band 0.0169-0.0191)
+Tail length from vent                              PASS    0.1599 m (target 0.160 m, -0.04%, band 0.1568-0.1632)
+Foot length including web                          PASS    0.0600 m (target 0.060 m, -0.03%, band 0.0588-0.0612)
+Web thickness (solid, thinnest membrane)           PASS    0.0040 m (target 0.004 m, +0.00%, band 0.0039-0.0041)
+Tarsus length (ankle to intertarsal joint)         PASS    0.0650 m (target 0.065 m, -0.00%, band 0.0637-0.0663)
+Wing chord at root                                 PASS    0.2200 m (target 0.220 m, -0.00%, band 0.2156-0.2244)
+Wing chord at tip                                  PASS    0.0500 m (target 0.050 m, +0.00%, band 0.0470-0.0530)
+Notched 3rd left primary, shortfall vs right       PASS    0.0350 m (target 0.035 m, +0.00%, band 0.0329-0.0371)
+Triangle count within budget                       PASS    3072 tris (budget 2900-3400)
+N-gons / quads in exported mesh                    PASS    0 non-triangular faces
+Inverted face normals                              PASS    0 faces disagree with outward recalc; 10/10 shells have positive signed volume
+Loose geometry                                     PASS    0 loose verts, 0 loose edges, 10 parts each a single island
+Non-manifold edges (watertight shells)             PASS    0 edges not shared by exactly 2 faces
+Object transforms applied (loc 0, rot 0, scale 1)  PASS    11/11 objects identity
+Pivot at foot-contact plane between the feet       PASS    origin offset from contact centroid = (-0.0000, -0.0002, 0.0000) m, min Z = 0.00000 m
+Bilateral centre plane on X = 0                    PASS    min X -0.7200, max X 0.7200, asymmetry 0.00000 m
+Rig: 9 bones, exact names                          PASS    9 bones: root, body, neck, head, wing_L_01, wing_L_02, wing_R_01, wing_R_02, tail
+Root bone identity at the origin                   PASS    root head = (0.0000, 0.0000, 0.0000)
+Skin weights                                       PASS    max 2 influences/vertex, 0 unweighted, worst |sum-1| = 0.000000
+Vertex colour channels                             PASS    0
+GLB exported, +Y up, 1 unit = 1 metre              PASS    bbox X 1.4400 (span) / Y 0.3795 (height) / Z 0.6199 (length) m; 20 nodes, max node-scale deviation 9.54e-06 (float32 noise)
+
+27/27 checks passed - OK

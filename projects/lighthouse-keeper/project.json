@@ -1,0 +1,16 @@
+{
+  "id": "lighthouse-keeper",
+  "name": "Lighthouse Keeper",
+  "idea": "A short first-person game where you are the keeper of a lighthouse during a storm. The lamp keeps failing and you have to climb the tower, find what broke, and fix it before the ship on the horizon runs aground. Tense, quiet, no combat.",
+  "created_at": "2026-09-22T19:20:43+00:00",
+  "state": "assets_ready",
+  "runtime": "claude",
+  "threads": {
+    "design": "01a0ca90-76a5-7f01-99ba-53367c889e4e",
+    "claude:design": "b1f7e2ba-26bb-4851-9215-cc3e11425a9a",
+    "claude:manifest": "fe393fb7-e099-42d5-a878-82569da8addb",
+    "claude:asset:herring-gull": "85c207db-6d25-4cad-bd02-cce9a0a7d36b",
+    "claude:build:herring-gull": "5ba9c129-e1eb-48c1-a95a-f5a3076ee010",
+    "render:herring-gull": "01a0cb1d-6976-7b00-93df-a4c0b84ac816"
+  }
+}

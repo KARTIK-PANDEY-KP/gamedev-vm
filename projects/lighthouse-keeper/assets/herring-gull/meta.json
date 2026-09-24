@@ -1,0 +1,127 @@
+{
+  "id": "herring-gull",
+  "name": "the Herring Gull",
+  "derived_from": [
+    "game-design.md#4-entity-roster",
+    "level-design.md#4.10-the-gallery"
+  ],
+  "stale": false,
+  "brief_written_at": "2026-09-22T20:30:46+00:00",
+  "images": {
+    "views": [
+      "front",
+      "left",
+      "back",
+      "right"
+    ],
+    "models": {
+      "front": "gpt-image-2.5-flare",
+      "other_views": "gpt-image-2.5-sunburst"
+    },
+    "quality": "high",
+    "size": "1024x1024",
+    "background": "transparent",
+    "style_prompt": "*Rendered as a physically-based 3D game asset at a realism level of seven out of ten, in the material language of a 1904 North Atlantic lighthouse: dressed grey granite, riveted wrought iron, galvanised steel, polished and tarnished brass, thick lead-painted timber, tarred oak and hand-blown crown glass. Shape language is heavy, symmetrical and load-bearing \u2014 cylinders, rings, radial spokes, flanges, rivet lines and simple chamfers between 2 mm and 8 mm, with no sharp unsupported edges, no organic curves and no decorative flourish beyond a single engraved brass plate.",
+    "front_prompt": "SUBJECT \u2014 the image shows this and nothing else: An adult herring gull standing in a closed horizontal wedge, its folded wings tucked inside the body outline with crossed near-black primaries projecting a hand's width past a tapered tail, a short blunt hooked bill, a heavy convex belly and scaled webbed feet with dark curled claws; the head, throat, breast, belly and tail are a pale cool sea-foam grey, the mantle and folded wing coverts a flat weathered zinc grey the colour of galvanised rail, the outer wingtips deep storm black, the bill a dull unpolished brass tone with a small oxide-red spot on the lower mandible and a thin oxide-red ring around a pale blank clay-grey iris, and the legs and webs a muted desaturated clay-pink; patchy dried salt crust whitens the crown and upper mantle, the shoulders and back are rain-soaked into separated wet feather spikes while the breast stays dry and lofted, one outer primary on the left wing is broken short, and a faint grey oil film smears the lower breast.\nReal-world size: 0.62 m from bill tip to tail tip, 1.44 m wingspan, 0.38 m tall standing.\nVIEW: front elevation, the subject facing the camera.\nRENDERING STYLE \u2014 governs finish, materials, palette and mood only. It must never change what the subject is, its anatomy or its proportions: *Rendered as a physically-based 3D game asset at a realism level of seven out of ten, in the material language of a 1904 North Atlantic lighthouse: dressed grey granite, riveted wrought iron, galvanised steel, polished and tarnished brass, thick lead-painted timber, tarred oak and hand-blown crown glass. Shape language is heavy, symmetrical and load-bearing \u2014 cylinders, rings, radial spokes, flanges, rivet lines and simple chamfers between 2 mm and 8 mm, with no sharp unsupported edges, no organic curves and no decorative flourish beyond a single engraved brass plate.\nMUST NOT APPEAR: No pure white, cream or ivory plumage, no yellow bill, no bright pink or scarlet legs, no metallic or polished sheen anywhere, no spread, raised or heraldic wings, no second bird or flock, no perch, rail, rock or ground plane, no rivets, chamfers, flanges or machined edges, no injury, blood or missing eye, no text, no watermark and no human figures.\nFlat even diffuse studio lighting, no cast shadows, no ground plane, no backdrop. Fully transparent background. One subject only, centred, filling about 80 percent of the frame, nothing cropped. Camera level with the subject's mid-height, minimal perspective. No text, no logos, no watermarks.\nTo be explicit, the subject of this image is: An adult herring gull standing in a closed horizontal wedge, its folded.",
+    "usage": {
+      "input_tokens": 4377,
+      "output_tokens": 7024,
+      "total_tokens": 11401
+    },
+    "metric_authority": "the brief, not these images"
+  },
+  "images_generated_at": "2026-09-22T20:36:56+00:00",
+  "render": {
+    "ok": true,
+    "image": "render.png",
+    "samples": 192,
+    "resolution": [
+      1600,
+      1200
+    ],
+    "materials": [
+      {
+        "zone": "Head, neck, breast, belly, flanks, undertail",
+        "hex": "#A8B4B0",
+        "roughness": 0.62
+      },
+      {
+        "zone": "Wet shoulders and upper wing coverts",
+        "hex": "#5C6B6A",
+        "roughness": 0.22
+      },
+      {
+        "zone": "Drier mantle and lower coverts",
+        "hex": "#5C6B6A",
+        "roughness": 0.38
+      },
+      {
+        "zone": "Primary tips, shafts and claws",
+        "hex": "#0B1418",
+        "roughness": 0.3
+      },
+      {
+        "zone": "Tail, primary bases, trailing edges and mirrors",
+        "hex": "#A8B4B0",
+        "roughness": 0.3
+      },
+      {
+        "zone": "Bill ridge and hook",
+        "hex": "#C2A15A",
+        "roughness": 0.26
+      },
+      {
+        "zone": "Bill base",
+        "hex": "#C2A15A",
+        "roughness": 0.4
+      },
+      {
+        "zone": "Gonys spot",
+        "hex": "#6E2E24",
+        "roughness": 0.26
+      },
+      {
+        "zone": "Orbital eye ring",
+        "hex": "#6E2E24",
+        "roughness": 0.34
+      },
+      {
+        "zone": "Scaled legs and tarsi",
+        "hex": "#836B5F",
+        "roughness": 0.34
+      },
+      {
+        "zone": "Webbed feet",
+        "hex": "#836B5F",
+        "roughness": 0.52
+      },
+      {
+        "zone": "Iris",
+        "hex": "#8C8578",
+        "roughness": 0.06
+      },
+      {
+        "zone": "Pupil",
+        "hex": "#0B1418",
+        "roughness": 0.06
+      },
+      {
+        "zone": "Patchy crown, nape and upper-mantle salt bloom",
+        "hex": "#A8B4B0",
+        "roughness": 0.62
+      },
+      {
+        "zone": "Lower-breast paraffin film, zinc component",
+        "hex": "#5C6B6A",
+        "roughness": 0.62
+      },
+      {
+        "zone": "Lower-breast paraffin film, lime component",
+        "hex": "#8C8578",
+        "roughness": 0.62
+      }
+    ],
+    "iterations": 2,
+    "notes": "All materials are dielectric, metallic 0.00, with no emission or subsurface scattering. Exact brief sRGB swatches are converted to linear shader values. No new albedo colours. Supplied spread-wing bind pose and geometry retained; no perch animation or UVs exist in the GLB. Materials assigned by GullBody/GullWing/GullTail/GullLeg/GullFoot/GullEye names; bill has a separate body slot. Procedural masks substitute for missing textures: tracts at >=1 mm scale, wet-to-dry mantle roughness 0.22-0.38, bill 0.26-0.40, salt at 30-55% opacity only on normals Z>0.60, and asymmetric 15% lower-breast paraffin film mixing Weathered Zinc toward Lime Render. Chosen: head roughness follows dry down (0.62); salt 0.62, ring 0.34, claws 0.30; minor procedural roughness variation on other surfaces. Chosen presentation: orthographic elevated three-quarter camera, transparent RGBA, no floor; two 6500 K area lights as storm key/fill and one 2200 K area rim, low Iron Blue world fill. Light powers, sizes, camera and exposure are presentation choices; temperatures come from the brief. Final key/fill/rim powers 55/18/12 W, disk sizes 1.45/1.40/0.40 m; exposure 0 stops. Camera direction (2.5,-2.4,2.5), auto-fit to 86% frame bounds. Imported armature custom-shape helper excluded by its bone references. Iteration 1 revealed excessive warm specular wash on the zinc wings; iteration 2 reduces the rim and raises the three-quarter camera to increase vertical occupancy. Final PNG visually inspected: complete silhouette, zinc wings distinct from Sea Foam down, controlled warm rim. Final PNG verified as 1600x1200 RGBA8 with transparent background. Two completed image renders; one earlier setup run stopped before rendering on the importer bone-display helper and was corrected. Input GLB, brief, and all reference files verified unchanged by SHA-256."
+  }
+}

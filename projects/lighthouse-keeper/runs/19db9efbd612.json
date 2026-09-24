@@ -1,0 +1,172 @@
+{
+  "id": "19db9efbd612",
+  "project_id": "lighthouse-keeper",
+  "kind": "brief",
+  "scope": "asset:herring-gull",
+  "status": "done",
+  "started_at": "2026-09-22T20:23:03+00:00",
+  "ended_at": "2026-09-22T20:30:46+00:00",
+  "events": [
+    {
+      "ts": "2026-09-22T20:23:03+00:00",
+      "kind": "status",
+      "text": "writing the brief for the Herring Gull"
+    },
+    {
+      "ts": "2026-09-22T20:23:03+00:00",
+      "kind": "status",
+      "text": "runtime: claude"
+    },
+    {
+      "ts": "2026-09-22T20:23:03+00:00",
+      "kind": "status",
+      "text": "claude start in lighthouse-keeper"
+    },
+    {
+      "ts": "2026-09-22T20:23:09+00:00",
+      "kind": "log",
+      "text": "I'll start by reading the design documents."
+    },
+    {
+      "ts": "2026-09-22T20:23:10+00:00",
+      "kind": "tool",
+      "text": "Bash find /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper -maxdepth 2 -type d -not -path \"*/.git/*\" | head -50; echo \"---\"; ls -la /Users/kapie/Projects/"
+    },
+    {
+      "ts": "2026-09-22T20:23:13+00:00",
+      "kind": "tool",
+      "text": "Read /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design/art-bible.md"
+    },
+    {
+      "ts": "2026-09-22T20:23:18+00:00",
+      "kind": "tool",
+      "text": "Grep /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design"
+    },
+    {
+      "ts": "2026-09-22T20:23:24+00:00",
+      "kind": "tool",
+      "text": "Bash grep -n \"^#\\{1,4\\} \" /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design/level-design.md"
+    },
+    {
+      "ts": "2026-09-22T20:23:28+00:00",
+      "kind": "tool",
+      "text": "Read /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design/level-design.md"
+    },
+    {
+      "ts": "2026-09-22T20:23:32+00:00",
+      "kind": "tool",
+      "text": "Read /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design/level-design.md"
+    },
+    {
+      "ts": "2026-09-22T20:23:45+00:00",
+      "kind": "tool",
+      "text": "Read /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design/game-design.md"
+    },
+    {
+      "ts": "2026-09-22T20:23:55+00:00",
+      "kind": "tool",
+      "text": "Bash ls -R /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/ 2>/dev/null; echo \"--- runs ---\"; ls /Users/kapie/Projects/gamedev-vm/projects/lightho"
+    },
+    {
+      "ts": "2026-09-22T20:24:00+00:00",
+      "kind": "tool",
+      "text": "Bash cd /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets; echo \"=== manifest.json ===\"; cat manifest.json; echo; echo \"=== herring-gull/meta.json ="
+    },
+    {
+      "ts": "2026-09-22T20:24:11+00:00",
+      "kind": "tool",
+      "text": "Bash cd /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets; python3 -c \"\nimport json\nm=json.load(open('manifest.json'))\nprint(list(m.keys()))\nfor e i"
+    },
+    {
+      "ts": "2026-09-22T20:24:17+00:00",
+      "kind": "tool",
+      "text": "Read /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/brief.md"
+    },
+    {
+      "ts": "2026-09-22T20:24:24+00:00",
+      "kind": "tool",
+      "text": "Read /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/brief.md"
+    },
+    {
+      "ts": "2026-09-22T20:24:35+00:00",
+      "kind": "tool",
+      "text": "Read /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/brief.md"
+    },
+    {
+      "ts": "2026-09-22T20:24:42+00:00",
+      "kind": "tool",
+      "text": "Bash cd /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design; grep -n \"Storm Stage\\|Stage 1\\|wind 14\\|Storm System\" game-design.md | head -30; echo \"=="
+    },
+    {
+      "ts": "2026-09-22T20:24:45+00:00",
+      "kind": "tool",
+      "text": "Read /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design/game-design.md"
+    },
+    {
+      "ts": "2026-09-22T20:24:50+00:00",
+      "kind": "tool",
+      "text": "Bash cd /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design; sed -n '19,40p' vision.md; echo \"=== interact ===\"; grep -n \"2.20 m\\|interaction sphere\\|"
+    },
+    {
+      "ts": "2026-09-22T20:26:12+00:00",
+      "kind": "log",
+      "text": "I have everything I need. Writing the brief now."
+    },
+    {
+      "ts": "2026-09-22T20:30:06+00:00",
+      "kind": "tool",
+      "text": "Write /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/brief.md"
+    },
+    {
+      "ts": "2026-09-22T20:30:12+00:00",
+      "kind": "tool",
+      "text": "Bash cd /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design; awk 'NR>=160 && NR<=195 && /^###/ {print NR\": \"$0}' audio.md; grep -n \"^### 4\\.\" audio.md"
+    },
+    {
+      "ts": "2026-09-22T20:30:17+00:00",
+      "kind": "tool",
+      "text": "Bash cd /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/design; grep -n \"^### 3\\.\\|^## \" game-design.md | head -25"
+    },
+    {
+      "ts": "2026-09-22T20:30:23+00:00",
+      "kind": "tool",
+      "text": "Edit /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/brief.md"
+    },
+    {
+      "ts": "2026-09-22T20:30:26+00:00",
+      "kind": "log",
+      "text": "Now `subject.json`:"
+    },
+    {
+      "ts": "2026-09-22T20:30:34+00:00",
+      "kind": "tool",
+      "text": "Write /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull/subject.json"
+    },
+    {
+      "ts": "2026-09-22T20:30:38+00:00",
+      "kind": "tool",
+      "text": "Bash cd /Users/kapie/Projects/gamedev-vm/projects/lighthouse-keeper/assets/herring-gull; python3 -c \"\nimport json\nd=json.load(open('subject.json'))\nassert set(d)=={'"
+    },
+    {
+      "ts": "2026-09-22T20:30:44+00:00",
+      "kind": "log",
+      "text": "Wrote `assets/herring-gull/brief.md` (530 lines, all ten sections, every geometry and texture number cited to `art-bible.md` \u00a78 row 56 / \u00a79 or listed under 13 Assumptions) and `assets/herring-gull/subject.json` (description / dimensions / negative), building to the design set's 0.62 m \u00d7 1.44 m rather than the manifest note's stale 1.10 m wingspan \u2014 that conflict is flagged as Assumption A1 and Open question Q1, alongside nine others including the glTF-vs-FBX pipeline discrepancy and the 2-skinned-mesh budget cap."
+    },
+    {
+      "ts": "2026-09-22T20:30:46+00:00",
+      "kind": "status",
+      "text": "23 turns, $3.97"
+    },
+    {
+      "ts": "2026-09-22T20:30:46+00:00",
+      "kind": "result",
+      "text": "brief written for the Herring Gull"
+    },
+    {
+      "ts": "2026-09-22T20:30:46+00:00",
+      "kind": "status",
+      "text": "done",
+      "status": "done"
+    }
+  ]
+}
