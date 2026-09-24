@@ -1,0 +1,432 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ *
+ * Harness — "ink & ember"
+ * A dark workshop surface. Deep blue-black ink, one warm lamp accent,
+ * hairline rules, editorial serif for the few moments that need a voice.
+ * ------------------------------------------------------------------ */
+
+@theme {
+  --font-sans: "Archivo Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-display: "Instrument Serif", ui-serif, Georgia, serif;
+
+  --color-ink-1000: #05080a;
+  --color-ink-950: #080c0e;
+  --color-ink-900: #0b1013;
+  --color-ink-850: #0e1519;
+  --color-ink-800: #121a1f;
+  --color-ink-750: #172228;
+  --color-ink-700: #1d2b32;
+  --color-ink-650: #24343c;
+  --color-ink-600: #2e4149;
+
+  --color-line: #1a262c;
+  --color-line-strong: #27373f;
+
+  --color-paper: #e7eef2;
+  --color-paper-dim: #aebdc5;
+  --color-paper-mute: #7b8e97;
+  --color-paper-faint: #566970;
+
+  --color-ember: #f0a04b;
+  --color-ember-bright: #ffbc79;
+  --color-ember-deep: #a8662a;
+  --color-live: #5ec8e4;
+  --color-ok: #77d3a0;
+  --color-warn: #ecb44f;
+  --color-bad: #f4746c;
+
+  --radius-panel: 10px;
+
+  --ease-out-soft: cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+
+@layer base {
+  html {
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-ink-900);
+    color: var(--color-paper);
+    font-family: var(--font-sans);
+    font-variant-numeric: tabular-nums;
+    overscroll-behavior: none;
+  }
+
+  /* Lamp-light atmosphere: a warm glow off the top-left, a cold one
+     off the top-right, and a fine grain so flat panels are not flat. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(1000px 560px at 8% -12%, rgba(240, 160, 75, 0.075), transparent 62%),
+      radial-gradient(760px 420px at 102% -6%, rgba(94, 200, 228, 0.05), transparent 66%);
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.04;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  #root {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: rgba(240, 160, 75, 0.28);
+    color: var(--color-paper);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ember);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    font: inherit;
+    color: inherit;
+  }
+
+  /* Slim, quiet scrollbars — this tool scrolls a lot. */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-ink-650) transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: var(--color-ink-700);
+    border: 3px solid transparent;
+    background-clip: content-box;
+    border-radius: 999px;
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    background: var(--color-ink-600);
+    background-clip: content-box;
+  }
+}
+
+@layer components {
+  /* Hairline top highlight — makes a panel read as a raised surface. */
+  .surface {
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.035),
+      0 1px 2px rgba(0, 0, 0, 0.35);
+  }
+
+  .micro {
+    font-size: 10px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .rule-dotted {
+    background-image: linear-gradient(to right, var(--color-line-strong) 50%, transparent 50%);
+    background-size: 5px 1px;
+    background-repeat: repeat-x;
+  }
+
+  /* ---- markdown ------------------------------------------------- */
+  /* Prose keeps a reading measure; tables and rules use the full column. */
+  .md {
+    color: var(--color-paper-dim);
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+  .md > p,
+  .md > ul,
+  .md > ol,
+  .md > blockquote,
+  .md > h1,
+  .md > h4 {
+    max-width: 74ch;
+  }
+  .md > h2,
+  .md > h3 {
+    max-width: 92ch;
+  }
+  .md > pre {
+    max-width: 100ch;
+  }
+  .md > * + * {
+    margin-top: 1em;
+  }
+  .md h1,
+  .md h2,
+  .md h3,
+  .md h4 {
+    color: var(--color-paper);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.25;
+  }
+  .md h1 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: -0.01em;
+    margin-top: 0;
+  }
+  .md h2 {
+    font-size: 1.2rem;
+    margin-top: 2.2em;
+    padding-bottom: 0.45em;
+    border-bottom: 1px solid var(--color-line);
+  }
+  .md h3 {
+    font-size: 1rem;
+    margin-top: 1.9em;
+    color: var(--color-ember-bright);
+  }
+  .md h4 {
+    font-size: 0.85rem;
+    margin-top: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-paper-mute);
+  }
+  .md p,
+  .md li {
+    text-wrap: pretty;
+  }
+  .md a {
+    color: var(--color-ember);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(240, 160, 75, 0.4);
+  }
+  .md a:hover {
+    text-decoration-color: var(--color-ember);
+  }
+  .md strong {
+    color: var(--color-paper);
+    font-weight: 600;
+  }
+  .md em {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.06em;
+    color: var(--color-paper);
+  }
+  .md ul,
+  .md ol {
+    padding-left: 1.25em;
+  }
+  .md ul {
+    list-style: none;
+    padding-left: 1.1em;
+  }
+  .md ul > li {
+    position: relative;
+  }
+  .md ul > li::before {
+    content: "";
+    position: absolute;
+    left: -0.95em;
+    top: 0.72em;
+    width: 4px;
+    height: 4px;
+    border-radius: 1px;
+    background: var(--color-ember-deep);
+  }
+  .md ol {
+    list-style: decimal;
+  }
+  .md ol > li::marker {
+    color: var(--color-paper-faint);
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+  }
+  .md li + li {
+    margin-top: 0.3em;
+  }
+  .md blockquote {
+    border-left: 2px solid var(--color-ember-deep);
+    padding: 0.1em 0 0.1em 1em;
+    color: var(--color-paper-mute);
+    font-style: italic;
+  }
+  .md code {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    background: var(--color-ink-750);
+    border: 1px solid var(--color-line);
+    border-radius: 4px;
+    padding: 0.1em 0.35em;
+    color: var(--color-ember-bright);
+  }
+  .md pre {
+    background: var(--color-ink-950);
+    border: 1px solid var(--color-line);
+    border-radius: 8px;
+    padding: 0.9rem 1rem;
+    overflow-x: auto;
+    line-height: 1.6;
+  }
+  .md pre code {
+    background: none;
+    border: 0;
+    padding: 0;
+    color: var(--color-paper-dim);
+    font-size: 0.8rem;
+  }
+  .md hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, var(--color-line-strong) 50%, transparent 50%);
+    background-size: 6px 1px;
+    margin: 2em 0;
+  }
+  .md table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+  .md th {
+    text-align: left;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-paper-mute);
+    border-bottom: 1px solid var(--color-line-strong);
+    padding: 0.5em 0.75em;
+  }
+  .md td {
+    border-bottom: 1px solid var(--color-line);
+    padding: 0.5em 0.75em;
+    vertical-align: top;
+  }
+  .md img {
+    border-radius: 8px;
+    border: 1px solid var(--color-line);
+  }
+  .md-tight {
+    font-size: 0.875rem;
+    line-height: 1.65;
+  }
+  .md-tight > * {
+    max-width: none;
+  }
+  .md-tight h1 {
+    font-size: 1.3rem;
+  }
+  .md-tight h2 {
+    font-size: 1.05rem;
+    margin-top: 1.4em;
+  }
+  .md-tight h3 {
+    font-size: 0.92rem;
+    margin-top: 1.2em;
+  }
+}
+
+@layer utilities {
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(7px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  .rise {
+    animation: rise 0.36s var(--ease-out-soft) both;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .fade {
+    animation: fade 0.24s ease both;
+  }
+
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: translateY(8px) scale(0.985);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  .scale-in {
+    animation: scale-in 0.22s var(--ease-out-soft) both;
+  }
+
+  @keyframes beacon {
+    0%,
+    100% {
+      opacity: 1;
+      box-shadow: 0 0 0 0 currentColor;
+    }
+    50% {
+      opacity: 0.55;
+      box-shadow: 0 0 0 3px transparent;
+    }
+  }
+  .beacon {
+    animation: beacon 1.6s ease-in-out infinite;
+  }
+
+  @keyframes sweep {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  .sweep::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(240, 160, 75, 0.14), transparent);
+    animation: sweep 1.5s linear infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

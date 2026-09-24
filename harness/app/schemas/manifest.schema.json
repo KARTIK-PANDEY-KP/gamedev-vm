@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["entries"],
+  "properties": {
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "asset_class", "tier", "in_slice", "derived_from", "note"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "asset_class": {
+            "type": "string",
+            "enum": ["character", "prop", "kit_piece", "environment", "material", "vfx", "ui"]
+          },
+          "tier": { "type": "string", "enum": ["hero", "mid", "background"] },
+          "in_slice": { "type": "boolean" },
+          "derived_from": { "type": "array", "items": { "type": "string" } },
+          "note": { "type": "string" }
+        }
+      }
+    }
+  }
+}
