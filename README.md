@@ -1,5 +1,51 @@
 # gamedev-vm
 
+Two things live here:
+
+1. **[The harness](harness/)** — turns a game idea into design docs, per-asset briefs with reference images, and Blender-built Unity assets. You run it on your own machine and drive it from a browser.
+2. **The VM provisioner** — one script that turns a fresh Ubuntu VM into a Unity + Blender workstation. Documented below.
+
+---
+
+## The harness
+
+```
+"a first-person game where you play a lighthouse keeper during a storm"
+        ↓  five design docs — vision, game design, art bible, level design, audio
+        ↓  the asset list the docs imply, which you review and accept
+        ↓  per asset: a production brief, then four reference views
+        ↓  per asset: a rigged mesh, checked against the brief, then rendered
+```
+
+Each step runs as a job you watch: the web UI streams the agent's tool calls and output live over a websocket, and a chat panel scoped to whatever you are looking at reruns the agent to change it. Everything it writes is plain files in `projects/<name>/`, so you can read, edit and commit them.
+
+### Run it locally
+
+Nothing is hosted — you start the server yourself and open it in a browser:
+
+```bash
+cd harness
+uv sync
+(cd web && npm install && npm run build)
+OPENAI_API_KEY=sk-... uv run uvicorn app.main:app --port 8799
+```
+
+Then open **http://localhost:8799**.
+
+It needs an agent CLI — [Codex](https://developers.openai.com/codex/cli) or [Claude Code](https://claude.com/claude-code) — for every step that writes something; an `OPENAI_API_KEY` for reference images (GPT Image 2.5); and Blender for the build step. The UI reports each of these honestly rather than failing silently, so you can start with just one of them installed. See [harness/README.md](harness/README.md) for the full setup, the runtime choice and the layout.
+
+### A worked example
+
+[`projects/lighthouse-keeper/`](projects/lighthouse-keeper/) is one idea taken end to end: 1,447 lines of design docs, 110 derived assets, and the herring gull carried all the way through a 56 KB brief, four reference views, a 3,072-triangle rigged mesh that passed 27 of 27 dimensional and topology checks, and this render — materials and lighting built from the art bible's own hex palette:
+
+![The built herring gull, rendered](projects/lighthouse-keeper/assets/herring-gull/build/render.png)
+
+The three plans behind it are in [`plans/`](plans/).
+
+---
+
+## The VM provisioner
+
 One script that turns a fresh Ubuntu 22.04/24.04 x86_64 VM (ideally with an NVIDIA GPU) into a Unity + Blender workstation that you open in a web browser.
 
 It installs:
