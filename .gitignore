@@ -1,0 +1,13 @@
+test/.cache/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Generated projects are committed as a worked example; ignore only scratch inside them
+projects/**/*.tmp
+
+# Local env
+.env
+.env.*

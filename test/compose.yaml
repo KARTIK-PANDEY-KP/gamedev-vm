@@ -1,0 +1,38 @@
+# Local test rig: an S3-compatible store (MinIO) and two fake VMs.
+#   vm1 runs the full install (Unity editor lands on a case-sensitive disk image
+#   under .cache/unity, see run.sh), vm2 plays the second machine / second user.
+name: gamedev-vm-test
+
+x-vm: &vm
+  build: { context: ., dockerfile: vm.Dockerfile }
+  image: gamedev-vm-test-vm
+  platform: linux/amd64
+  privileged: true
+  cgroup: host
+  tmpfs: [/run, /run/lock]
+  volumes:
+    - /sys/fs/cgroup:/sys/fs/cgroup:rw
+    - ../setup.sh:/root/setup.sh:ro
+  depends_on: [store]
+
+services:
+  store:
+    image: minio/minio:latest
+    command: server /data
+    environment:
+      MINIO_ROOT_USER: testaccess
+      MINIO_ROOT_PASSWORD: testsecret-123456
+
+  vm1:
+    <<: *vm
+    hostname: vm1
+    ports: ["${VM1_PORT:-8444}:8444"]
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
+      - ../setup.sh:/root/setup.sh:ro
+      - ${VM1_UNITY_DIR:-./.cache/unity}:/opt/unity
+
+  vm2:
+    <<: *vm
+    hostname: vm2
+    ports: ["${VM2_PORT:-8445}:8444"]
